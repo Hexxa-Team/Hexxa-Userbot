@@ -177,7 +177,7 @@ KING_TEKS_KUSTOM = os.environ.get("KING_TEKS_KUSTOM", None)
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡️")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🔥")
 
 # Custom Umur
 UMUR = os.environ.get("UMUR", None)
@@ -343,7 +343,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Telah Aktif```")
+    await bot.send_message(BOTLOG_CHATID, "``` 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥 Telah Aktif```")
     return
 
 with bot:
@@ -449,7 +449,7 @@ with king:
                     buttons=[
                         [
                             Button.url("Tutorial Userbot",
-                                       "https://t.me/KingUserbotSupport")],
+                                       "https://t.me/HexxaUserbotSupport")],
                     ]
                 )
 
@@ -483,7 +483,7 @@ with king:
                                                    url="https://t.me/KingUserbotSupport"),
                                                    custom.Button.url(
                                                        text="Support Channel",
-                                                       url="https://t.me/TeamKingUserbot"
+                                                       url="https://t.me/TeamHexxaUserbot"
                                                )
                                                ]
                                            ]
@@ -501,9 +501,9 @@ with king:
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/apisuserbot/King-Userbot"),
+                                       "https://github.com/Hexxa-Team/Hexxa-Userbot"),
                             Button.url("Tutorial Deploy",
-                                       "https://t.me/TeamKingUserbot/16")],
+                                       "https://t.me/TeamHexxaUserbot")],
                     ]
                 )
 
@@ -615,32 +615,32 @@ with king:
                 result = builder.photo(
                     file=logo,
                     link_preview=False,
-                    text=f"\n⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n◎› **King** {DEFAULTUSER}\n\n◎› **Branch :** __King-Userbot__\n◎› **Versi Bot :** `v{BOT_VER}`\n◎› **Plugins :** `{len(plugins)}`\n\n**USERBOT TELEGRAM**".format(
+                    text=f"\n𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n◎› **King** {DEFAULTUSER}\n\n◎› **Branch :** __King-Userbot__\n◎› **Versi Bot :** `v{BOT_VER}`\n◎› **Plugins :** `{len(plugins)}`\n\n**USERBOT TELEGRAM**".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    "Bantuan 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥 ",
                     text="◎› Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
                     "USERBOT TELEGRAM",
-                    text="""⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n=============================\n**King-Userbot** Adalah Sebuah Repository Userbot Yang Dapat Membantu Akun Pengguna Telegram Melakukan Hal Apapun\n\n⚠️ DISCLAIMER ⚠️\nBacalah Peraturan Berikut [Disini](https://telegra.ph/Peraturan-08-04)\n\n**Gabung Grup Support Kami** [Disini](https://t.me/KingUserbotSupport)\n\n=============================\n\n**USERBOT TELEGRAM**""",
+                    text=""" 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n=============================\n**King-Userbot** Adalah Sebuah Repository Userbot Yang Dapat Membantu Akun Pengguna Telegram Melakukan Hal Apapun\n\n⚠️ DISCLAIMER ⚠️\nBacalah Peraturan Berikut [Disini](https://telegra.ph/Peraturan-08-04)\n\n**Gabung Grup Support Kami** [Disini](https://t.me/KingUserbotSupport)\n\n=============================\n\n**USERBOT TELEGRAM**""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Repository",
-                                "https://github.com/apisuserbot/King-Userbot"),
+                                "https://github.com/Hexxa-Team/Hexxa-Userbot"),
                             custom.Button.url(
                                 "Developer",
-                                "t.me/PacarFerdilla")],
+                                "t.me/sokapgblg")],
                         [custom.Button.url(
                             "License",
-                            "https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE")],
+                            "https://github.com/Hexxa-Team/Hexxa-Userbot/blob/Hexxa-Userbot/LICENSE")],
                     ],
                     link_preview=False,
                 )
@@ -657,7 +657,7 @@ with king:
             if event.query.user_id == uid:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, plugins, "helpme")
-                text = f"\n⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n◎› **King** {DEFAULTUSER}\n\n◎› **Branch :** __King-Userbot__\n◎› **Versi Bot :** `v{BOT_VER}`\n◎› **Plugins :** `{len(plugins)}`\n\n**USERBOT TELEGRAM**"
+                text = f"\n𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n◎› **User** {DEFAULTUSER}\n\n◎› **Branch :** __Hexxa-Userbot__\n◎› **Versi Bot :** `v{BOT_VER}`\n◎› **Plugins :** `{len(plugins)}`\n\n**USERBOT TELEGRAM**"
                 await event.edit(text,
                                  file=logo,
                                  buttons=buttons,
@@ -682,11 +682,11 @@ with king:
                     buttons=[
                         [
                             Button.url("Support Channel",
-                                       "t.me/TeamKingUserbot"),
+                                       "t.me/TeamHexxaUserbot"),
                             Button.url("Support Chat",
-                                       "t.me/KingUserbotSupport")],
+                                       "t.me/HexxaUserbotSupport")],
                         [Button.url("Donasi Developer",
-                                    "https://saweria.co/DonasiDeveloper")],
+                                    "https://t.me/sokapgblg")],
                         [custom.Button.inline(
                             "Menu Alive", data="alive_inline")],
                         [custom.Button.inline(
