@@ -47,7 +47,7 @@ async def telegraphs(grop):
                 result = await grop.client(functions.messages.ExportChatInviteRequest(
                     peer=created_chat_id,
                 ))
-                await grop.edit("King, Grup/Channel {} Sukses Dibuat. Tekan [{}]({}) Untuk Melihatnya".format(group_name, group_name, result.link))
+                await grop.edit("Yeaay, Grup/Channel {} Sukses Dibuat. Tekan [{}]({}) Untuk Melihatnya".format(group_name, group_name, result.link))
             except Exception as e:  # pylint:disable=C0103,W0703
                 await grop.edit(str(e))
 
