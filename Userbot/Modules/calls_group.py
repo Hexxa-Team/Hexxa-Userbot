@@ -12,7 +12,7 @@ from telethon.tl.types import ChatAdminRights
 from userbot import CMD_HELP
 from userbot.events import register
 
-NO_ADMIN = "`King Gagal Dikarenakan Bukan Admin :)`"
+NO_ADMIN = "`Anda Gagal Dikarenakan Bukan Admin :)`"
 
 
 async def get_call(event):
