@@ -35,7 +35,7 @@ async def gucast(event):
         return await event.edit("`Mohon Berikan Sebuah Pesan`")
     tt = event.text
     msg = tt[7:]
-    kingget = await event.edit("`Sedang Mengirim Pesan Pribadi Secara Global...⚡️`")
+    kingget = await event.edit("`Sedang Mengirim Pesan Pribadi Secara Global...🔥`")
     er = 0
     done = 0
     async for x in bot.iter_dialogs():
