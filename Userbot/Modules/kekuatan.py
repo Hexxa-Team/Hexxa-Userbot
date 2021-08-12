@@ -31,7 +31,7 @@
 # SOFTWARE.
 # Ported from Xtra-telegram by @heyworld
 
-# KING USERBOT
+# Hexxa USERBOT
 
 import os
 from telethon.errors.rpcerrorlist import YouBlockedUserError
@@ -42,19 +42,19 @@ from userbot import bot, TEMP_DOWNLOAD_DIRECTORY, CMD_HELP
 
 @register(outgoing=True, pattern=r'^.kekuatan(:? |$)([1-8])?')
 async def _(fry):
-    await fry.edit("`King Mengaktifkan Kekuatan Telegram...⚡`")
+    await fry.edit("`Otw Mengaktifkan Kekuatan Telegram...⚡`")
     level = fry.pattern_match.group(2)
     if fry.fwd_from:
         return
     if not fry.reply_to_msg_id:
-        await fry.edit("`Mohon Balas Di Sticker King`")
+        await fry.edit("`Mohon Balas Di Sticker Tod`")
         return
     reply_message = await fry.get_reply_message()
     if not reply_message.media:
         await fry.edit("`Gambar tidak di dukung`")
         return
     if reply_message.sender.bot:
-        await fry.edit("`Mohon Balas Di Sticker King`")
+        await fry.edit("`Mohon Balas Di Sticker Tod`")
         return
     chat = "@image_deepfrybot"
     message_id_to_reply = fry.message.reply_to_msg_id
@@ -73,10 +73,10 @@ async def _(fry):
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await fry.reply("`King Mohon Unblock` @image_deepfrybot`...`")
+            await fry.reply("`Tod Mohon Unblock` @image_deepfrybot`...`")
             return
         if response.text.startswith("Forward"):
-            await fry.edit("`King Mohon Matikan Setelan Forward Privasi...`")
+            await fry.edit("`Tod Mohon Matikan Setelan Forward Privasi...`")
         else:
             downloaded_file_name = await fry.client.download_media(
                 response.media,
@@ -109,14 +109,14 @@ async def _(fry):
     if fry.fwd_from:
         return
     if not fry.reply_to_msg_id:
-        await fry.edit("`Mohon Balas Di Sticker King`")
+        await fry.edit("`Mohon Balas Di Sticker Tod`")
         return
     reply_message = await fry.get_reply_message()
     if not reply_message.media:
-        await fry.edit("`Mohon Balas Di Sticker King`")
+        await fry.edit("`Mohon Balas Di Sticker Tod`")
         return
     if reply_message.sender.bot:
-        await fry.edit("`Mohon Balas Di Sticker King`")
+        await fry.edit("`Mohon Balas Di Sticker Tod`")
         return
     chat = "@image_deepfrybot"
     message_id_to_reply = fry.message.reply_to_msg_id
@@ -135,10 +135,10 @@ async def _(fry):
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await fry.reply("`King Mohon Unblock` @image_deepfrybot`...`")
+            await fry.reply("`Tod Mohon Unblock` @image_deepfrybot`...`")
             return
         if response.text.startswith("Forward"):
-            await fry.edit("`King Mohon Matikan Setelan Privasi Forward...`")
+            await fry.edit("`Tod Mohon Matikan Setelan Privasi Forward...`")
         else:
             downloaded_file_name = await fry.client.download_media(
                 response.media,
@@ -167,5 +167,5 @@ async def _(fry):
 CMD_HELP.update({
     "kekuatan":
     "**Modules: __Kekuatan__\n\n⚡𝘾𝙈𝘿⚡: `.kekuatan` / `.kekuatan [level(1-8)]`"
-    "\n**Penjelasan:** untuk mengubah foto/sticker."
+    "\n**Penjelasan:** untuk mengubah foto/sticker Menjadi Aneh."
 })
