@@ -38,15 +38,15 @@ LASTMSG = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 CUSTOM_TEXT = str(
-    PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat king {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
+    PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
 DEF_UNAPPROVED_MSG = (
-    f"╔══════ 👑 ══════╗\n      **ROOM CHAT KING**     \n╚══════ 〠 ══════╝  \n"
+    f"╔════════════╗\n      **ROOM CHAT {DEFAULTUSER}**     \n╚══════ 〠 ══════╝  \n"
     f"⎆ __{CUSTOM_TEXT}__ \n"
     "⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n"
     f"⎆ **Dilarang Spam** \n"
     "⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n"
-    f"◈ **KING** : {DEFAULTUSER}\n"
-    f"◈ **SUPPORT** ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\n")
+    f"◈ **Name** : {DEFAULTUSER}\n"
+    f"◈ **SUPPORT** 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n")
 # =================================================================
 
 
@@ -107,7 +107,7 @@ async def permitpm(event):
             if COUNT_PM[event.chat_id] > 3:
                 await event.respond(
                     "✣ __**SISTEM BLOKIR OTOMATIS**__\n\n__Mohon Maaf Nomor Anda Telah Di Blokir Karena Spam Pesan__\n"
-                    f"__Ke Room Chat King {DEFAULTUSER}__"
+                    f"__Ke Room Chat {DEFAULTUSER}__"
                 )
 
                 try:
@@ -117,9 +117,9 @@ async def permitpm(event):
                     if BOTLOG:
                         await event.client.send_message(
                             BOTLOG_CHATID,
-                            "king, Terjadi Masalah Saat Menghitung Private Message, Mohon Restart Bot!",
+                            "Maaf, Terjadi Masalah Saat Menghitung Private Message, Mohon Restart Bot!",
                         )
-                    return LOGS.info("CountPM tidak dibunyikan king")
+                    return LOGS.info("CountPM tidak dibunyikan!")
 
                 await event.client(BlockRequest(event.chat_id))
                 await event.client(ReportSpamRequest(peer=event.chat_id))
