@@ -1,7 +1,6 @@
 # Copyright (C) 2020 TeamUltroid
 # Ported by X_ImFine
-# Recode by @mrismanaziz
-# RecodeV2 by @PacarFerdilla
+# Recode by Kyy
 
 import asyncio
 import os
@@ -57,18 +56,18 @@ async def set_not_afk(event):
                 shite = await bot.send_message(event.chat_id, file=pic)
                 shites = await bot.send_message(
                     event.chat_id,
-                    f"🔥 {ALIVE_NAME} __**Sudah Kembali Online...**__\n**Sejak :** `{total_afk_time}` **Yang Lalu**",
+                    f"🔥 {ALIVE_NAME} __**Telah Kembali Online...**__\n**Sejak :** `{total_afk_time}` **Yang Lalu**",
                 )
             else:
                 shite = await bot.send_message(
                     event.chat_id,
-                    f"🔥 __**Sudah Kembali Online...**__\n**Ada Sejak :** `{total_afk_time}` **Yang Lalu**",
+                    f"🔥 __**Telah Kembali Online...**__\n**Ada Sejak :** `{total_afk_time}` **Yang Lalu**",
                     file=pic,
                 )
         except BaseException:
             shite = await bot.send_message(
                 event.chat_id,
-                f"🔥 __**Sudah Kembali Online...**__\n**Kembali Chat Sejak :** `{total_afk_time}` **Yang Lalu**",
+                f"🔥 __**Telah Kembali Online...**__\n**Kembali Chat Sejak :** `{total_afk_time}` **Yang Lalu**",
             )
 
         except BaseException:
@@ -114,7 +113,7 @@ async def on_afk(event):
                 f"**Karena :** `{reason}`")
         else:
             message_to_reply = (
-                f"**Maaf King {ALIVE_NAME} Sedang AFK**\n\n**Sejak :** `{total_afk_time}` **Yang Lalu**"
+                f"**Maaf {ALIVE_NAME} Sedang AFK**\n\n**Sejak :** `{total_afk_time}` **Yang Lalu**"
             )
         try:
             if pic.endswith((".tgs", ".webp")):
@@ -180,30 +179,30 @@ async def _(event):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
                         event.chat_id,
-                        f"**King {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
+                        f"**User {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
                     )
                 else:
                     await bot.send_message(
                         event.chat_id,
-                        f"**King {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
+                        f"**User {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
                         file=pic,
                     )
             except BaseException:
                 await bot.send_message(
                     event.chat_id,
-                    f"**King {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
+                    f"**User {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
                 )
         else:
             try:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**King {ALIVE_NAME} Telah AFK...**"
+                        event.chat_id, f"**User {ALIVE_NAME} Telah AFK...**"
                     )
                 else:
                     await bot.send_message(
                         event.chat_id,
-                        f"**King {ALIVE_NAME} Telah AFK...**",
+                        f"**User {ALIVE_NAME} Telah AFK...**",
                         file=pic,
                     )
             except BaseException:
@@ -252,8 +251,8 @@ CMD_HELP.update(
     {
         "afk": "**✘ Plugin : **`afk`\
         \n\n  •  **Perintah :** `.afk` <alasan> bisa <sambil reply sticker/foto/gif/media>\
-        \n  •  **Function : **Memberi tahu kalau King sedang afk bisa dengan menampilkan media keren ketika seseorang menandai atau membalas salah satu pesan atau dm Anda\
-        \n\n  •  **Notes :** __Bila ada orang spam berlebihan ke Anda , tinggal ketik__ `.block`\
+        \n  •  **Function : **Memberi tahu kalau User sedang afk bisa dengan menampilkan media keren ketika seseorang menandai atau membalas salah satu pesan atau dm Anda\
+        \n\n  •  **Notes :** __Bila ada orang spam berlebihan ke Anda , Hanya ketik__ `.block`\
     "
     }
 )
