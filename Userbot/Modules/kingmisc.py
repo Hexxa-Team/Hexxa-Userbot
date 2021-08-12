@@ -144,7 +144,7 @@ async def _(event):
         for i in a:
             await event.reply(i.original.action.message)
     else:
-        await event.edit("King Anda memerlukan izin Admin untuk melakukan perintah ini")
+        await event.edit("Maaf,Anda memerlukan izin Admin untuk melakukan perintah ini")
         await asyncio.sleep(3)
         await event.delete()
 
