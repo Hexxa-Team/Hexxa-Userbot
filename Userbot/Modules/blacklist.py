@@ -84,7 +84,7 @@ async def on_delete_blacklist(rmbl):
         if sql.rm_from_blacklist(rmbl.chat_id, trigger.lower()):
             successful += 1
     if not successful:
-        await rmbl.edit("`King,` **{}** `Tidak Ada Di Blacklist`".format(text))
+        await rmbl.edit("`Maaf,` **{}** `Tidak Ada Di Blacklist`".format(text))
     else:
         await rmbl.edit("`Sukses Menghapus` **{}** `Di Blacklist`".format(text))
 
@@ -96,7 +96,7 @@ CMD_HELP.update(
         \n  •  **Function : **Melihat daftar blacklist yang aktif di obrolan\
         \n\n  •  **Perintah :** `.addbl <kata>`\
         \n  •  **Function : **Memasukan pesan ke blacklist 'kata blacklist'\
-        \n\n\n King bot akan otomatis menghapus `kata blacklist`\
+        \n\n\n  bot akan otomatis menghapus `kata blacklist`\
         \n\n  •  **Perintah :** `.rmbl <kata>`\
         \n  •  **Function : **Menghapus kata blacklist\
     "
