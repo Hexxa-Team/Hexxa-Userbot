@@ -134,7 +134,7 @@ async def gban(event):
         await gbun.edit("**Anda Tidak mempunyai Grup Yang Anda Admin :)**")
         return
     await gbun.edit(
-        f"**Pengguna** [Ini](tg://user?id={user.id}) **sudah ada di dalam** `{len(san)}` **grup**"
+        f"**User** [Jamet](tg://user?id={user.id}) **sudah ada di dalam** `{len(san)}` **grup**"
     )
     for i in range(fiz):
         try:
@@ -278,7 +278,7 @@ async def gablist(event):
     await edit_or_reply(event, GBANNED_LIST)
 
 
-# Ported by @PacarFerdilla
+# Ported by @sokapgblg
 
 
 CMD_HELP.update(
