@@ -76,7 +76,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/sokapgblg)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -142,7 +142,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/sokapgblg)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -208,7 +208,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/sokapgblg)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -274,7 +274,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/sokapgblg)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -340,7 +340,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/sokapgblg)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -355,7 +355,7 @@ CMD_HELP.update(
     {
         "carbon_value": "**✘ Plugin :** `Carbon Value`\
         \n\n  •  **Perintah :** `.carbon` value <value=1,2,3,4,5>\
-        \n  •  **Function : **balas atau ketik `.carbon1` atau 2,3,4,5 value dan mempercantik teks Anda\
+        \n  •  **Function : **balas atau ketik `.carbon1` atau 2,3,4,5 value dan memperindah teks Anda\
     "
     }
 )
