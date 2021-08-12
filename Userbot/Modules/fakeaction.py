@@ -87,13 +87,13 @@ async def _(event):
 # created by Apis
 
 
-@register(outgoing=True, pattern="^.fkuota(?: |$)(.*)")
+@register(outgoing=True, pattern="^.fusage(?: |$)(.*)")
 async def kuota(event):
     event.pattern_match.group(1)
     await event.edit("`Mengecek kuota...⚡️`")
     sleep(1)
     await event.edit(
-        f"★ **INFO KUOTA KING** ★\n╔══════━━━━━━━══════╗ \n"
+        f"★ **INFO KUOTA Hexxa-Userbot** ★\n╔══════━━━━━━━══════╗ \n"
         f"➠ **Penggunaan Kuota :** `{DEFAULTUSER}` \n"
         f"• **Hasil :** `00` **Jam** - `00` **Menit** \n"
         f"• **Persen :** `00`% \n"
@@ -102,8 +102,8 @@ async def kuota(event):
         f"• **Sisa :**  `1000` **Jam** - `00` **Menit** \n"
         f"• **Persen :** `10`% \n"
         f"╚══════━━━━━━━══════╝ \n"
-        f"◈ **KING :** {DEFAULTUSER} \n"
-        f"◈ **REPO :** [King-Userbot](https://github.com/apisuserbot/King-Userbot)")
+        f"◈ **Name :** {DEFAULTUSER} \n"
+        f"◈ **REPO :** [Hexxa-Userbot](https://github.com/Hexxa-Team/Hexxa-Userbot)")
 
 
 @register(outgoing=True, pattern="^.fgban(?: |$)(.*)")
@@ -214,7 +214,7 @@ CMD_HELP.update(
         "fakeaction": "**✘ Plugin :** `fakeaction`\
         \n\n  •  **Perintah :** `.ftyping` | `.faudio` | `.fvideo` | `.fgame` <jumlah text>\
         \n  •  **Function : **Fake Ini Yang Bisa Menipu Saat Anda Mengetik , Audio , Video , Memainkan Game Selama Mungkin\
-        \n\n  •  **Perintah :** `.fkuota`\
+        \n\n  •  **Perintah :** `.fusage`\
         \n  •  **Function : **Fake dyno 1000 jam\
         \n\n  •  **Perintah :** `.fgban`\
         \n  •  **Function : **Fake global banned\
