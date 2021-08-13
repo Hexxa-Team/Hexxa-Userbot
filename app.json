@@ -1,17 +1,17 @@
 {
-  "name": "King-Userbot",
-  "description": "[King-Userbot] USERBOT TELEGRAM.",
-  "logo": "https://telegra.ph/file/632a843c5fbb0756e5b4e.jpg",
+  "name": "Hexxa-Userbot",
+  "description": "[Hexxa-Userbot] USERBOT TELEGRAM.",
+  "logo": "https://telegra.ph/file/21590402a77fec099dbe0.jpg",
   "keywords": [
     "telegram",
     "userbot",
-    "king-userbot",
+    "hexxa-userbot",
     "modular",
     "python"
   ],
-  "repository": "https://github.com/apisuserbot/King-Userbot",
-  "telegram": "https://t.me/PacarFerdilla",
-  "success_url": "https://t.me/KingUserbotSupport",
+  "repository": "https://github.com/Hexxa-Team/Hexxa-Userbot",
+  "telegram": "https://t.me/sokapgblg",
+  "success_url": "https://t.me/HexxaUserbotSupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -151,7 +151,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️",
+      "value": "𝙃𝙚𝙭𝙭𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 🔥",
       "required": false
     },
     "ALIVE_NAME": {
@@ -160,7 +160,7 @@
     },
     "UMUR": {
       "description": "Isi Umur Anda Sekarang (15 Tahun Adalah Umur Developer King Saat Ini)",
-      "value": "15 Tahun",
+      "value": "19 Tahun",
       "required": false
     },
     "KING_TEKS_KUSTOM": {
