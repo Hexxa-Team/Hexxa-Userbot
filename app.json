@@ -163,7 +163,7 @@
       "value": "19 Tahun",
       "required": false
     },
-    "KING_TEKS_KUSTOM": {
+    "HEXXA_TEKS_KUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .kingalive atau .kingon (Isi Terserah)",
       "required": false
     },
