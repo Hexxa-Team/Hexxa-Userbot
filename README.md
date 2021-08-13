@@ -10,7 +10,6 @@ Terimakasih telah menggunakan repository ini!
 
 <a href="https://t.me/Hexxa-Team/16"><img src="https://img.shields.io/badge/Tutorial%20Deploy%3F-Hexxa Userbot-blue?&style=flat-square?&logo=telegram" width=165px></a></p>
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5533549.gif" width="802" height="96" alt="Hexxa-Userbot" /></a>
 
 <p align="center">
   <a href="https://github.com/Hexxa-Team/Hexxa-Userbot/fork">
@@ -28,14 +27,10 @@ Terimakasih telah menggunakan repository ini!
 [![GitHub contributors](https://img.shields.io/github/contributors/Hexxa-Team/Hexxa-Userbot?&style=plastic&logo=github)](https://GitHub.com/Hexxa-Team/Hexxa-Userbot/graphs/contributors/)
 <p align="center">
 
-<p align="center">
-<a href="https://www.codefactor.io/repository/github/Hexxa-Team/Hexxa-userbot"><img src="https://www.codefactor.io/repository/github/Hexxa-Team/Hexxa-userbot/badge?style=for-the-badge" alt="CodeFactor" /></a>
 </p>
 
-![Hexxa Userbot Logo](https://telegra.ph/file/8eb368517a8d3933c05d9.jpg)
+![Hexxa Userbot Logo](https://telegra.ph/file/21590402a77fec099dbe0.jpg)
 
-<a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot"> <img src="https://img.shields.io/docker/image-size/apiskinguserbot/kinguserbot/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
-<a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot/tags"> <img src="https://img.shields.io/docker/v/apiskinguserbot/kinguserbot/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
 </p>
 
 <h4 align="center"> DISCLAIMER </p>
@@ -49,7 +44,7 @@ Terimakasih telah menggunakan repository ini!
   Jangan pernah sekali sekali menyalah gunakan repository ini
 ```
 
-### Repo King Userbot 🚀
+### Repo Hexxa Userbot 🚀
 Repo Yang Dikelola oleh [Kyy](https://t.me/sokapgblg) Dari Berbagai Repo Userbot yg ada diGithub 
 
 `
@@ -72,7 +67,7 @@ Userbot digunakan untuk bersenang senang di telegram, ada beberapa fitur yg mung
 ### Group Support 🇮🇩
 `
 Klik tombol di bawah untuk join ke group support kami`
-   <a href="https://t.me/KingUserbotSupport"><img src="https://img.shields.io/badge/Grup%20Support%3F-King-green?&style=flat-square?&logo=telegram" width=165px></a></p>
+   <a href="https://t.me/HexxaUserbotSupport"><img src="https://img.shields.io/badge/Grup%20Support%3F-Hexxa-green?&style=flat-square?&logo=telegram" width=165px></a></p>
 
 ### String Session 🖇
 `
@@ -83,7 +78,7 @@ Klik tombol di samping untuk membuat string milikmu`
 `
 Klik tombol dibawah untuk deploy Userbot milikmu`
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/apisuserbot/King-Userbot/tree/King-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Hexxa-Team/Hexxa-Userbot/tree/Hexxa-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
