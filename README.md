@@ -37,7 +37,7 @@ Terimakasih telah menggunakan repository ini!
 
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-   King-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+   Hexxa-Userbot digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
    Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
@@ -78,7 +78,7 @@ Klik tombol di samping untuk membuat string milikmu`
 `
 Klik tombol dibawah untuk deploy Userbot milikmu`
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Hexxa-Team/Hexxa-Userbot/tree/Hexxa-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Hexxa-Team/Hexxa-Userbot/tree/Hexxa-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Railway-black?style=flat&logo=Railway" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
