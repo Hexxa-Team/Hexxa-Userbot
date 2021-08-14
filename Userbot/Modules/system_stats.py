@@ -19,7 +19,7 @@ import sys
 import time
 from datetime import datetime
 import psutil
-from userbot import ALIVE_EMOJI, ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, KING_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
+from userbot import ALIVE_EMOJI, ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, HEXXA_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
 from userbot.events import register
 
 
@@ -165,8 +165,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**★-**⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Versi :** \n "
-            f"heads/King-Userbot-0-x634i7u1"
+            "**★-**𝙃𝙚𝙭𝙭𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩🔥 Versi :** \n "
+            f"heads/Hexxa-Userbot-0-x634i7u1"
             "\n**★-**Revisi :**\n "
             f"{revout}"
         )
@@ -224,15 +224,15 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:kingalive|kingon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:hexlive|hexon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"┗┓★ ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ★┏┛\n"
-        f"\n__**{KING_TEKS_KUSTOM}**__\n"
+        f"┗┓★ 𝙃𝙚𝙭𝙭𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩🔥 ★┏┛\n"
+        f"\n__**{HEXXA_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━━**\n"
-        f"★ ** King ** \n"
+        f"★ ** User ** \n"
         f"☇ : `{DEFAULTUSER}` \n"
         f"★ ** Username ** \n"
         f"☇ : `@{user.username}` \n"
@@ -242,9 +242,9 @@ async def amireallyalive(alive):
         f"|✶ 👾 `Bot Ver  :`{BOT_VER} \n"
         f"|✶ 📂 `Plugins  :`{len(modules)} \n"
         f"╰╼━━━━━━━━━━━━━━━━━━━━━\n"
-        f"• **Copyright :** [King Userbot Company LLC](https://github.com/apisuserbot/King-Userbot) \n"
-        f"• **License :** [Raphielscape Version 1.d](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) \n"
-        f"• **Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) ")
+        f"• **Copyright :** [𝙃𝙚𝙭𝙭𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩🔥](https://github.com/hexxa-team/Hexxa-Userbot) \n"
+        f"• **License :** [Raphielscape Version 1.d](https://github.com/Hexxa-Team/Hexxa-Userbot/blob/Hexxa-Userbot/LICENSE) \n"
+        f"• **Support :** [USERBOT TELEGRAM](https://t.me/HexxaUserbotSupport) ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -270,9 +270,9 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"  𝗫 ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ 𝗫 \n"
+        f"  𝗫 𝙃𝙚𝙭𝙭𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩🔥 𝗫 \n"
         f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"╟ 🤴 KING     : {DEFAULTUSER}\n"
+        f"╟ 🤴 User     : {DEFAULTUSER}\n"
         f"╟ 🔎 Username : @{user.username}\n"
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
         f"╟◈ ⚙️ `Telethon :`v {version.__version__} \n"
@@ -281,9 +281,9 @@ async def amireallyalive(alive):
         f"╟◈ 🛠 `Version  :`{BOT_VER} \n"
         f"╟◈ 📂 `Plugins  :`{len(modules)} Plugin \n"
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
-        f"• **Copyright :** [King Userbot Company LLC](https://github.com/apisuserbot/King-Userbot) \n"
-        f"• **License :** [Raphielscape Version 1.d](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) \n"
-        f"• **Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) \n"
+        f"• **Copyright :** [Hexxa-Userbot](https://github.com/Hexxa-Team/Hexxa-Userbot) \n"
+        f"• **License :** [Raphielscape Version 1.d](https://github.com/Hexxa-Team/Hexxa-Userbot/blob/Hexxa-Userbot/LICENSE) \n"
+        f"• **Support :** [USERBOT TELEGRAM](https://t.me/HexxaUserbotSupport) \n"
         f"━━━━━━━━━━━━━━━━━━━━━╯")
     if ALIVE_LOGO:
         try:
@@ -318,13 +318,13 @@ async def redis(alive):
     await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
     await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
     await alive.edit("__𝐗...𝐒𝐈𝐒𝐓𝐄𝐌...𝐗__")
-    await alive.edit("⚡")
+    await alive.edit("🔥")
     await asyncio.sleep(3)
-    await alive.edit("😈")
+    await alive.edit("☠️")
     await asyncio.sleep(3)
     output = (
         f"**╭╼═✯══════════════✯═╾╮**\n"
-        f" ㅤ ** ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ** \n"
+        f" ㅤ ** 🔥𝙃𝙚𝙭𝙭𝙖-𝙐𝙨𝙚𝙧𝙗𝙤𝙩🔥 ** \n"
         f"**╰╼═✯══════════════✯═╾╯**\n"
         f"╭╼════════════════════╾╮ \n"
         f"│  ⇱ **SISTEM ALIVE BOT** ⇲ \n"
@@ -337,11 +337,11 @@ async def redis(alive):
         f"╟◈ 👾 `Bot Ver  :`v. {BOT_VER} \n"
         f"╟◈ 📂 `Plugins  :`{len(modules)} Plugins \n"
         f"┞╼════════════════════╾┤ \n"
-        f"├◈ **{KING_TEKS_KUSTOM}** \n"
+        f"├◈ **{HEXXA_TEKS_KUSTOM}** \n"
         f"│  ** USERBOT TELEGRAM ** \n"
         f"╰╼════════════════════╾╯ \n"
-        f"[License](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) | [Support Chat](t.me/KingUserbotSupport) | "
-        f"[Developer King](t.me/PacarFerdilla)")
+        f"[License](https://github.com/Hexxa-Team/Hexxa-Userbot/blob/Hexxa-Userbot/LICENSE) | [Support Channel](t.me/HexxaUserbotSupport) | "
+        f"[Developer Hexxa](t.me/sokapgblg)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -366,19 +366,19 @@ async def redis(alive):
 async def redis(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`★ USERBOT HAS BEEN ACTIVE! ★`")
+    await alive.edit("`★ USERBOT TELAH AKTIF! ★`")
     await asyncio.sleep(3)
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"★ [King-Userbot](https://github.com/apisuserbot/King-Userbot) **Running Userbot Active!** ★\n\n"
-        f"__**{KING_TEKS_KUSTOM}**__\n\n"
+        f"★ [Hexxa-Userbot](https://github.com/Hexxa-Team/Hexxa-Userbot) **Running Userbot Active!** ★\n\n"
+        f"__**{HEXXA_TEKS_KUSTOM}**__\n\n"
         f"{ALIVE_EMOJI} **King :** `{DEFAULTUSER}` \n"
         f"{ALIVE_EMOJI} **Plugins :** `{len(modules)} Plugin` \n"
         f"{ALIVE_EMOJI} **Bot Version :** `{BOT_VER}` \n"
         f"{ALIVE_EMOJI} **Python Version :** `{python_version()}` \n"
         f"{ALIVE_EMOJI} **Telethon Version :** `{version.__version__}` \n"
-        f"[Support Chat](https://t.me/KingUserbotSupport) | [Channel Support](https://t.me/TeamKingUserbot) | [Developer King](t.me/PacarFerdilla)")
+        f"[Support Channel](https://t.me/HexxaUserbotSupport) | [Developer Hexxa](t.me/sokapgblg)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -442,7 +442,7 @@ CMD_HELP.update(
         \n\n  •  **Perintah :** `.resetalive`\
         \n  •  **Function : **Untuk Mereset Pengguna Alive\
         \n\n  **Animasi Alive Lainnya :**\
-        \n `.kingalive` | `.kingon` | `.ualive` | `.uon` | `.xalive` | `.xon`\
+        \n `.hexalive` | `.hexon` | `.ualive` | `.uon` | `.xalive` | `.xon`\
         \n\n  **Dingunakan Untuk Bersenang Senang Saja**\
     "
     }
