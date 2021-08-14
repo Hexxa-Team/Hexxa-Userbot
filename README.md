@@ -78,7 +78,7 @@ Klik tombol di samping untuk membuat string milikmu`
 `
 Klik tombol dibawah untuk deploy Userbot milikmu`
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Hexxa-Team/Hexxa-Userbot/tree/Hexxa-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-purple?style=flat&logo=Heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Hexxa-Team/Hexxa-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-purple?style=flat&logo=Heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
