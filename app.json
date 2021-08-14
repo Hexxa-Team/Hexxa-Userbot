@@ -126,7 +126,7 @@
       "required": true
     },
     "LASTFM_API": {
-      "description": "Dapatkan LASTFM_API caranya ke @HexxaUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan LASTFM_API caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "LASTFM_SECRET": {
@@ -173,7 +173,7 @@
       "required": false
     },
     "BITLY_TOKEN": {
-      "description": "Dapatkan Bitly TOKEN caranya ke @HexxaUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan Bitly TOKEN caranya ke @HexxaUserbotSupport",
       "value": "",
       "required": false
     },
@@ -182,7 +182,7 @@
       "required": false
     },
     "LYDIA_API_KEY": {
-      "description": "Dapatkan LYDIA_API_KEY caranya ke @HexxaUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan LYDIA_API_KEY caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "WEATHER_DEFCITY": {
