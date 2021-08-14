@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di repl caranya ada di repo, jika tidak tau bisa ke @KingUserbotSupport lalu ketik #string",
+      "description": "Dapatkan String Session di repl caranya ada di repo",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -50,19 +50,15 @@
       "value": "False"
     },
     "QUOTES_API_TOKEN": {
-      "description": "Dapatkan QUOTES_API_TOKEN caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan QUOTES_API_TOKEN caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "GENIUS_ACCESS_TOKEN": {
-      "description": "Dapatkan GENIUS_ACCES_TOKEN caranya ke @KingUserbotSupport lalu ketik #apikey",
-      "required": false
-    },
-    "MONGO_URI": {
-      "description": "URL Atlas MongoDB Anda, Dapatkan API URL dari (https://telegra.ph/Mongo-DB-12-24) - telegram",
+      "description": "Dapatkan GENIUS_ACCES_TOKEN caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "GENIUS": {
-      "description": "Dapatkan GENIUS caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan GENIUS caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
@@ -84,11 +80,11 @@
       "required": false
     },
     "OPEN_WEATHER_MAP_APPID": {
-      "description": "Dapatkan OPEN_WEATHER_MAP_APPID caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan OPEN_WEATHER_MAP_APPID caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "PMPERMIT_TEXT": {
-      "description": "Isi Pesan Untuk Pesan Pribadi Anda Sendiri (Isi Sesuka Anda) Kalau Tidak Tau Bisa Ke @KingUserbotSupport",
+      "description": "Isi Pesan Untuk Pesan Pribadi Anda Sendiri (Isi Sesuka Anda)",
       "required": false
     },
     "PM_AUTO_BAN": {
@@ -97,19 +93,19 @@
       "required": true
     },
     "YOUTUBE_API_KEY": {
-      "description": "Dapatkan YOUTUBE_API_KEY caranya ke @KingUserbotSupport lalu ketik #apikey ",
+      "description": "Dapatkan YOUTUBE_API_KEY caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
-      "description": "Dapatkan OCR_SPACE_API_KEY caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan OCR_SPACE_API_KEY caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "REM_BG_API_KEY": {
-      "description": "Dapatkan REM_BG_API_KEY caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan REM_BG_API_KEY caranya ke @HexxaUserbotSupport",
       "required": false
     },
     "ANTI_SPAMBOT": {
-      "description": "Menendang robot spam dari grup setelah mereka bergabung, [Required kekuatan admin dalam grup untuk menendang]",
+      "description": "Menendang robot spam dari grup setelah mereka bergabung, [Memerlukan Hak admin dalam grup untuk menendang]",
       "value": "False"
     },
     "ANTI_SPAMBOT_SHOUT": {
@@ -130,7 +126,7 @@
       "required": true
     },
     "LASTFM_API": {
-      "description": "Dapatkan LASTFM_API caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan LASTFM_API caranya ke @HexxaUserbotSupport lalu ketik #apikey",
       "required": false
     },
     "LASTFM_SECRET": {
@@ -177,7 +173,7 @@
       "required": false
     },
     "BITLY_TOKEN": {
-      "description": "Dapatkan Bitly TOKEN caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan Bitly TOKEN caranya ke @HexxaUserbotSupport lalu ketik #apikey",
       "value": "",
       "required": false
     },
@@ -186,7 +182,7 @@
       "required": false
     },
     "LYDIA_API_KEY": {
-      "description": "Dapatkan LYDIA_API_KEY caranya ke @KingUserbotSupport lalu ketik #apikey",
+      "description": "Dapatkan LYDIA_API_KEY caranya ke @HexxaUserbotSupport lalu ketik #apikey",
       "required": false
     },
     "WEATHER_DEFCITY": {
@@ -198,10 +194,6 @@
       "description": "Setel ini ke True jika Anda mau log kesalahan yang akan disimpan di dalam log grup, untuk mengeluarkan kesalahan file saat ini chat, required harus valid BOTLOG_CHATID untuk diatur",
       "value": "False",
       "required": true
-    },
-    "DEEZER_ARL_TOKEN": {
-      "description": "Masukkan DEEZER ARL TOKEN dari https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken",
-      "required": false
     },
     "UPSTREAM_REPO_URL": {
       "description": "Untuk repo fork mu, Tambahkan repo url fork mu.",
