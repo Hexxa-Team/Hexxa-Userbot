@@ -155,12 +155,12 @@
       "required": false
     },
     "UMUR": {
-      "description": "Isi Umur Anda Sekarang (15 Tahun Adalah Umur Developer King Saat Ini)",
+      "description": "Isi Umur Anda Sekarang (19 Tahun Adalah Umur Developer King Saat Ini)",
       "value": "19 Tahun",
       "required": false
     },
     "HEXXA_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .kingalive atau .kingon (Isi Terserah)",
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .hexalive atau .hexon (Isi Terserah)",
       "required": false
     },
     "S_PACK_NAME": {
