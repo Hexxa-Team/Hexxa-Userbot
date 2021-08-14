@@ -21,7 +21,6 @@ Terimakasih telah menggunakan repository ini!
   </a>
 </p>
 
-![Repo Size](https://img.shields.io/github/repo-size//Hexxa-Team/Hexxa-Userbot?&style=plastic&logo=github)
 [![GitHub issues](https://img.shields.io/github/issues/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://github.com/Hexxa-Team/Hexxa-Userbot/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Hexxa-Team/Hexxa-Userbot?&style=plastic&logo=github)](https://github.com/Hexxa-Team/Hexxa-Userbot/graphs/commit-activity)
 [![GitHub contributors](https://img.shields.io/github/contributors/Hexxa-Team/Hexxa-Userbot?&style=plastic&logo=github)](https://GitHub.com/Hexxa-Team/Hexxa-Userbot/graphs/contributors/)
@@ -64,7 +63,7 @@ Userbot digunakan untuk bersenang senang di telegram, ada beberapa fitur yg mung
   > Akhirnya nyalakan app dan periksa log (pengaturan -> lihat log) nikmati :)
 ```
 
-### Group Support 🇮🇩
+### Channel Support 🇮🇩
 `
 Klik tombol di bawah untuk join ke group support kami`
    <a href="https://t.me/HexxaUserbotSupport"><img src="https://img.shields.io/badge/Grup%20Support%3F-Hexxa-green?&style=flat-square?&logo=telegram" width=165px></a></p>
@@ -72,7 +71,7 @@ Klik tombol di bawah untuk join ke group support kami`
 ### String Session 🖇
 `
 Klik tombol di samping untuk membuat string milikmu`
-   [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@apisuserbot/String-Session?v=1)
+   [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Rifkiarisman/Hexxa-String-Sesion)
 
 ### <p align="left">DEPLOY Hexxa-USERBOT 🔥</p>
 `
