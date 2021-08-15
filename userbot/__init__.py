@@ -171,7 +171,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # untuk perintah .hexon
-KING_TEKS_KUSTOM = os.environ.get("HEXXA_TEKS_KUSTOM", None)
+HEXXA_TEKS_KUSTOM = os.environ.get("HEXXA_TEKS_KUSTOM", None)
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
