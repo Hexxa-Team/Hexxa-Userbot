@@ -170,8 +170,8 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# untuk perintah .kingon
-KING_TEKS_KUSTOM = os.environ.get("KING_TEKS_KUSTOM", None)
+# untuk perintah .hexon
+KING_TEKS_KUSTOM = os.environ.get("HEXXA_TEKS_KUSTOM", None)
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -199,7 +199,7 @@ BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "King-Userbot")
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "0.5.4")
+BOT_VER = os.environ.get("BOT_VER", "0._1.0")
 
 # Default .alive username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -209,7 +209,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/8eb368517a8d3933c05d9.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/21590402a77fec099dbe0.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -445,7 +445,7 @@ with king:
                     f"**Selamat datang di** [{get_display_name(u)}](tg://user?id={u.id}) \n\n"
                     f"👤 **Pengguna :** [{get_display_name(c)}](tg://user?id={c.id}) \n"
                     f"📌 **ID Pengguna :** {c.id} \n\n"
-                    f"🤖 __Gabung Grup Tutorial Userbot Kami Agar Anda Bisa Memahami Userbot Telegram__\n",
+                    f"🤖 __Gabung Channel Userbot Kami Agar Anda Bisa Memahami Userbot Telegram__\n",
                     buttons=[
                         [
                             Button.url("Tutorial Userbot",
@@ -525,7 +525,7 @@ with king:
                 await event.message.get_sender()
                 text = (
                     f"👋🏻 Hai [{get_display_name(u)}](tg://user?id={u.id}) **Ini Adalah Alive**\n\n"
-                    f"__**{KING_TEKS_KUSTOM}**__ \n\n"
+                    f"__**{HEXXA_TEKS_KUSTOM}**__ \n\n"
                     "=============================\n"
                     f"     **Alive Bot** \n"
                     "=============================\n"
@@ -545,10 +545,10 @@ with king:
                                                [
                                                    custom.Button.url(
                                                        text="Repository",
-                                                       url="https://github.com/apisuserbot/King-Userbot"),
+                                                       url="https://github.com/Hexxa-Team/Hexxa-Userbot"),
                                                    custom.Button.url(
                                                        text="License",
-                                                       url="https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE"
+                                                       url="https://github.com/Hexxa-Team/Hexxa-Userbot/blob/Hexxa-Userbot/LICENSE"
                                                    )
                                                ]
                                            ]
@@ -570,7 +570,7 @@ with king:
                                                [
                                                    custom.Button.url(
                                                        text="Donasi Developer",
-                                                       url="https://saweria.co/DonasiDeveloper"
+                                                       url="https://t.me/sokapgblg"
                                                    )
                                                ]
                                            ]
@@ -592,7 +592,7 @@ with king:
                                                [
                                                    custom.Button.url(
                                                        text="String Session",
-                                                       url="https://replit.com/@apisuserbot/String-Session?v=1"
+                                                       url="https://replit.com/Rifkiarisman/Hexxa-String-Session"
                                                    )
                                                ]
                                            ]
@@ -610,12 +610,12 @@ with king:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@KingUserbotSupport"):
+                    "@HexxaUserbotSupport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logo,
                     link_preview=False,
-                    text=f"\n𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n◎› **King** {DEFAULTUSER}\n\n◎› **Branch :** __King-Userbot__\n◎› **Versi Bot :** `v{BOT_VER}`\n◎› **Plugins :** `{len(plugins)}`\n\n**USERBOT TELEGRAM**".format(
+                    text=f"\n𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n◎› **User** {DEFAULTUSER}\n\n◎› **Branch :** __Hexxa-Userbot__\n◎› **Versi Bot :** `v{BOT_VER}`\n◎› **Plugins :** `{len(plugins)}`\n\n**USERBOT TELEGRAM**".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -707,7 +707,7 @@ with king:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"__**{KING_TEKS_KUSTOM}**__ \n\n"
+                    f"__**{HEXXA_TEKS_KUSTOM}**__ \n\n"
                     "============================\n"
                     f"      **Alive Inline** \n"
                     "============================\n"
@@ -727,9 +727,9 @@ with king:
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/apisuserbot/King-Userbot"),
+                                       "https://github.com/Hexxa-Team/Hexxa-Userbot"),
                             Button.url("License",
-                                       "https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE")],
+                                       "https://github.com/Hexxa-Team/Hexxa-Userbot/blob/Hexxa-Userbot/LICENSE")],
                         [custom.Button.inline(
                             "Menu Kembali", data="settings")],
                     ]
