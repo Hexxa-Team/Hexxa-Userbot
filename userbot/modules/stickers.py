@@ -28,12 +28,12 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "King Sedang Mencolong Sticker...😳",
+    "Sedang Mencolong Sticker...😳",
     "Saatnya Beraksi , Mencolong Sticker...",
     "Waduh Sticker Lu Bagus Bro , Gw Curi Ya",
     "Wahaha Saatnya Maling Sticker...",
     "Yahahaha bagus nih , colong ah...",
-    "King memaksa untuk mencolong stiker",
+    "memaksa untuk mencolong stiker",
 ]
 
 
@@ -62,7 +62,7 @@ async def kang(args):
                 in message.media.document.attributes
             ):
                 emoji = message.media.document.attributes[1].alt
-                if emoji != "👑":
+                if emoji != "🔥":
                     emojibypass = True
         elif "tgsticker" in message.media.document.mime_type:
             await args.edit(f"`{random.choice(KANGING_STR)}`")
@@ -84,7 +84,7 @@ async def kang(args):
     if photo:
         splat = args.text.split()
         if not emojibypass:
-            emoji = "👑"
+            emoji = "🔥"
         pack = 1
         if len(splat) == 3:
             pack = splat[2]  # User sent both
@@ -250,7 +250,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            "**Sukses Mencolong Sticker!**"
+            "**Ini Pack Tikel Mu:)**"
             f"\n       - [TEKAN DISINI](t.me/addstickers/{packname}) -\n**Untuk Melihat Sticker Colongan Anda**",
             parse_mode="md",
         )
