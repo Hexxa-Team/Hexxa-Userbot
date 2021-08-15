@@ -31,7 +31,7 @@ async def yardim(event):
     try:
         kingbotusername = BOT_USERNAME
         if kingbotusername is not None:
-            results = await event.client.inline_query(kingbotusername, "@KingUserbotSupport")
+            results = await event.client.inline_query(kingbotusername, "@HexxaUserbotSupport")
             await results[0].click(
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
