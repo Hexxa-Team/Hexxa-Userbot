@@ -29,6 +29,6 @@ jobs:
           commit_message: 'pylint: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: apisuserbot
-          commit_user_email: nafisqurtubi154@gmail.com
-          commit_author: apisuserbot <nafisqurtubi154@gmail.com>
+          commit_user_name: Hexxa-Team
+          commit_user_email: Rifkiarisman@gmail.com
+          commit_author: Hexxa-Team <Rifkiarisman@gmail.com>
