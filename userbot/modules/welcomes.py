@@ -114,8 +114,8 @@ async def save_welcome(event):
         if BOTLOG_CHATID:
             await event.client.send_message(
                 BOTLOG_CHATID, f"#WELCOME \nID GRUP: {event.chat_id}"
-                "\nKing Memasang Pesan Perintah Welcome Digrup, Ini Adalah Catatan Pesan Welcome "
-                "Mohon Jangan Dihapus King!"
+                "\nSukses Memasang Pesan Perintah Welcome Digrup, Ini Adalah Catatan Pesan Welcome "
+                "Mohon Jangan Dihapus!"
             )
             msg_o = await event.client.forward_messages(
                 entity=BOTLOG_CHATID,
@@ -145,7 +145,7 @@ async def show_welcome(event):
         return await event.edit("`Running on Non-SQL mode!`")
     cws = get_current_welcome_settings(event.chat_id)
     if not cws:
-        return await event.edit("`Disini Tidak Ada Pesan Welcome Yang Anda Simpan King`")
+        return await event.edit("`Disini Tidak Ada Pesan Welcome Yang Anda Simpan`")
     elif cws and cws.f_mesg_id:
         msg_o = await event.client.get_messages(entity=BOTLOG_CHATID,
                                                 ids=int(cws.f_mesg_id))
@@ -167,7 +167,7 @@ async def del_welcome(event):
     if rm_welcome_setting(event.chat_id) is True:
         await event.edit("`Sukses Menghapus Pesan Welcome`")
     else:
-        await event.edit("`Anda Tidak Menyimpan Pesan Welcome Apapun Disini King`")
+        await event.edit("`Anda Tidak Menyimpan Pesan Welcome Apapun Disini`")
 
 
 CMD_HELP.update(
