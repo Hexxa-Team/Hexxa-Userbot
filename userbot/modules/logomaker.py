@@ -32,8 +32,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 # ============================================
 
-@register(outgoing=True, pattern="^.logo(?: |$)(.*)")
 
+@register(outgoing=True, pattern="^.logo(?: |$)(.*)")
 async def logo_gen(event):
 
     xx = await event.edit("`Processing...`")
