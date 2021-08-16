@@ -87,7 +87,7 @@ Klik tombol dibawah untuk deploy Userbot milikmu`
 
 *   [Apis](https://github.com/king-Userbot) - King-Userbot
 *   [SendiAp](https://github.com/SendiAp) - Rose-Userbot
-*   [Izzy](https://github.com/izzi-adeeva) - Ibel's-Userbot
+*   [Izzy](https://github.com/izzy-adeeva) - Ibel's-Userbot
 *   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 *   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
 DAN LAINNYA
