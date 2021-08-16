@@ -187,7 +187,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Isi Asalmu (Nama Kotamu)",
-      "value": "Jakarta",
+      "value": "Batam",
       "required": false
     },
     "LOGSPAMMER": {
@@ -197,6 +197,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Untuk repo fork mu, Tambahkan repo url fork mu.",
+      "value": "Hexxa-Userbot",
       "required": false
     },
     "BOT_TOKEN": {
