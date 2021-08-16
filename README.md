@@ -86,17 +86,10 @@ Klik tombol dibawah untuk deploy Userbot milikmu`
   Terimakasih untuk 
 
 *   [Apis](https://github.com/king-Userbot) - King-Userbot
-*   [Alvin](https://github.com/Zora24) - Lord Userbot
+*   [SendiAp](https://github.com/SendiAp) - Rose-Userbot
+*   [Izzy](https://github.com/izzi-adeeva) - Ibel's-Userbot
 *   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 *   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
-*   [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
-*   [Mr.Miss](https://github.com/keselekpermen69) - UserButt
-*   [adekmaulana](https://github.com/adekmaulana) - ProjectBish
-*   [MoveAngel](https://github.com/MoveAngel) - One4uBot
-*   [Alfianandaa](https://github.com/alfianandaa/ProjectAlf) - ProjectAlf
-*   [AnggaR69s](https://github.com/GengKapak/DCLXVI) - DCLXVI
-*   [kandnub](https://github.com/kandnub) - TG-UserBot
-*   [Sahyam2019](https://github.com/sahyam2019/oub-remix) - oub-remix 
 DAN LAINNYA
 
 
