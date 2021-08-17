@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡.`'
+                ' untuk dapat deploy perubahan terbaru dari 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥.`'
             )
             repo.__del__()
             return
@@ -63,11 +63,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy King Userbot dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Hexxa Userbot dyno.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nDyno ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+                         '\nDyno 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥 Sedang Dalam Proses, Mohon Menunggu 4-5 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Sukses Di Deploy!`\n" "`Memulai Ulang, Mohon Menunggu King.....⚡`")
+            await event.edit("`𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥 Sukses Di Deploy!`\n" "`Memulai Ulang, Mohon Menunggu.....⚡`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#UPDATE \n"
-                "`King-Userbot Sukses Di Update`")
+                "`Hexxa-Userbot Sukses Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ `Sukses Di Update!`')
+    await event.edit('`Sukses Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ `Di Mulai Ulang....`')
+    await event.edit('`Di Mulai Ulang....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik King`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#PERBARUI \n"
-            "**King-Userbot Telah Di Perbarui**")
+            "**Hexxa-Userbot Telah Di Perbarui**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -188,7 +188,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ **Sudah Versi Terbaru**\n')
+            f'\n𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥**Sudah Versi Terbaru**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -208,18 +208,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('✣ **Perintah Update :**\n\n• **Perintah** `.update now`\n• **Perintah** `.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari__ **King-Userbot**')
+        return await event.respond('✣ **Perintah Update :**\n\n• **Perintah** `.update now`\n• **Perintah** `.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari__ **Hexxa-Userbot**')
 
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....1%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....20%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....35%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Loading....77%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Updating...90%`')
-        await event.edit('`⎆ Proses Update ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Mohon Menunggu King....100%`')
+        await event.edit('`⎆ Proses Update Loading....1%`')
+        await event.edit('`⎆ Proses Update Loading....20%`')
+        await event.edit('`⎆ Proses Update Loading....35%`')
+        await event.edit('`⎆ Proses Update Loading....77%`')
+        await event.edit('`⎆ Proses Update Updating...90%`')
+        await event.edit('`⎆ Proses Update Mohon Menunggu....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -235,11 +235,11 @@ CMD_HELP.update(
     {
         "update": "**✘ Plugin : **`update`\
         \n\n  •  **Perintah :** `.update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru.\
         \n\n  •  **Perintah :** `.update now`\
-        \n  •  **Function : **Memperbarui ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡.\
+        \n  •  **Function : **Memperbarui 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥.\
         \n\n  •  **Perintah :** `.update deploy`\
-        \n  •  **Function : **Memperbarui ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Dengan Cara Deploy Ulang.\
+        \n  •  **Function : **Memperbarui 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥 Dengan Cara Deploy Ulang.\
     "
     }
 )
