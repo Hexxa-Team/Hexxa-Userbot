@@ -34,12 +34,12 @@ LFM_BIO_DISABLED = (
     "```last.fm current music to bio is now disabled. Bio reverted to default.```"
 )
 
-LFM_BIO_RUNNING = "````King, lastfm musik saat ini ke bio sudah berjalan.```"
+LFM_BIO_RUNNING = "````Hexxa, lastfm musik saat ini ke bio sudah berjalan.```"
 LFM_BIO_ERR = "```Tidak ada opsi yang ditentukan.``` "
 LFM_LOG_ENABLED = "```lastfm logging ke bot log sekarang diaktifkan.``` "
 LFM_LOG_DISABLED = "```lastfm logging ke bot log sekarang dinonaktifkan.``` "
 LFM_LOG_ERR = "```Tidak ada opsi yang ditentukan.```"
-ERROR_MSG = "```King, plugin lastfm dihentikan, mendapat kesalahan tak terduga.``` "
+ERROR_MSG = "```Hexxa, plugin lastfm dihentikan, mendapat kesalahan tak terduga.``` "
 
 ARTIST = 0
 SONG = 0
@@ -55,7 +55,7 @@ RUNNING = False
 LastLog = False
 # ================================================
 
-# KING - USERBOT
+# Hexxa - USERBOT
 
 
 @register(outgoing=True, pattern="^.lastfm$")

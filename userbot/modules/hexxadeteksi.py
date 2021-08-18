@@ -1,4 +1,4 @@
-# Ported From Cat Userbot For King Userbot By Apis/PacarFerdilla # Jangan Hapus # Jangan Ubah Bangsat!!!
+# Ported From Cat Userbot For Hexxa Userbot By Apis/PacarFerdilla # Jangan Hapus # Jangan Ubah Bangsat!!!
 # Based On Plugins
 # Kyy Ganteng
 

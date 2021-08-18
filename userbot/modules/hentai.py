@@ -31,7 +31,7 @@ async def _(event):
             return
         if response.text.startswith(
                 "**Maaf, saya tidak bisa mendapatkan manga dari**"):
-            await event.edit("```Saya pikir ini bukan tautan yang tepat king!```")
+            await event.edit("```Saya pikir ini bukan tautan yang tepat Hexxa!```")
         else:
             await event.delete()
             await bot.send_message(event.chat_id, response.message)

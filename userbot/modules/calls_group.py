@@ -16,8 +16,8 @@ NO_ADMIN = "`Anda Gagal Dikarenakan Bukan Admin :)`"
 
 
 async def get_call(event):
-    king = await event.client(getchat(event.chat_id))
-    user = await event.client(getvc(king.full_chat.call))
+    Hexxa = await event.client(getchat(event.chat_id))
+    user = await event.client(getvc(Hexxa.full_chat.call))
     return user.call
 
 

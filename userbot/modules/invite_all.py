@@ -50,29 +50,29 @@ async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        king = await event.reply("`Sedang Memproses...`")
+        Hexxa = await event.reply("`Sedang Memproses...`")
     else:
-        king = await event.edit("`Memproses...`")
+        Hexxa = await event.edit("`Memproses...`")
     kingubot = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
-        return await king.edit("`Maaf, Tidak dapat menambahkan pengguna di sini`")
+        return await Hexxa.edit("`Maaf, Tidak dapat menambahkan pengguna di sini`")
     s = 0
     f = 0
     error = 'None'
 
-    await king.edit("**TerminalStatus**\n\n`Mengumpulkan Pengguna...`")
+    await Hexxa.edit("**TerminalStatus**\n\n`Mengumpulkan Pengguna...`")
     async for user in event.client.iter_participants(kingubot.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await king.edit(f"**Terminal Kesalahan...**\n(`Mungkin Mendapat Kesalahan Batas dari telethon Tolong Coba Lagi`)\n**Error** : \n`{error}`\n\n• Menambahkan Pengguna `{s}`\n• Gagal Menambahkan Pengguna `{f}`")
+                return await Hexxa.edit(f"**Terminal Kesalahan...**\n(`Mungkin Mendapat Kesalahan Batas dari telethon Tolong Coba Lagi`)\n**Error** : \n`{error}`\n\n• Menambahkan Pengguna `{s}`\n• Gagal Menambahkan Pengguna `{f}`")
             await event.client(functions.channels.InviteToChannelRequest(channel=chat, users=[user.id]))
             s = s + 1
-            await king.edit(f"**Terminal Berjalan...**\n\n• Menambahkan Pengguna `{s}`\n• Gagal Menambahkan Pengguna `{f}`\n\n**Kesalahan Terakhir :** `{error}`")
+            await Hexxa.edit(f"**Terminal Berjalan...**\n\n• Menambahkan Pengguna `{s}`\n• Gagal Menambahkan Pengguna `{f}`\n\n**Kesalahan Terakhir :** `{error}`")
         except Exception as e:
             error = str(e)
             f = f + 1
-    return await king.edit(f"**Terminal Selesai** \n\n• Sukses Menambahkan Pengguna `{s}`\n• Gagal Menambahkan Pengguna `{f}`")
+    return await Hexxa.edit(f"**Terminal Selesai** \n\n• Sukses Menambahkan Pengguna `{s}`\n• Gagal Menambahkan Pengguna `{f}`")
 
 
 CMD_HELP.update(

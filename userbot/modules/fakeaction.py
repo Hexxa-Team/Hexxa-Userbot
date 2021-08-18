@@ -1,5 +1,5 @@
-# Port By @not From King-Userbot
-# Copyright (C) 2021 King-Userbot
+# Port By @not From Hexxa-Userbot
+# Copyright (C) 2021 Hexxa-Userbot
 
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
@@ -8,7 +8,7 @@ from userbot import DEFAULTUSER, CMD_HELP, bot
 from time import sleep
 import asyncio
 
-# Languange en to id from King-Userbot
+# Languange en to id from Hexxa-Userbot
 # edit by Apis
 # Thanks Ultroid
 

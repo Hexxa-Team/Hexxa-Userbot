@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# KING - USERBOT
+# Hexxa - USERBOT
 
 # APIS GANTENG
 
@@ -77,9 +77,9 @@ async def kang(args):
             is_anim = True
             photo = 1
         else:
-            return await args.edit("`File Tidak Didukung King!`")
+            return await args.edit("`File Tidak Didukung Hexxa!`")
     else:
-        return await args.edit("`Maaf King, Saya Gagal Mengambil Sticker Ini!`")
+        return await args.edit("`Maaf Hexxa, Saya Gagal Mengambil Sticker Ini!`")
 
     if photo:
         splat = args.text.split()
@@ -181,8 +181,8 @@ async def kang(args):
                         # Ensure user doesn't get spamming notifications
                         await bot.send_read_acknowledge(conv.chat_id)
                         return await args.edit(
-                            "`Sticker sukses tercolong di tambahkan ke Anda King !"
-                            "\nIni Sticker yang baru saja King Colong!"
+                            "`Sticker sukses tercolong di tambahkan ke Anda Hexxa !"
+                            "\nIni Sticker yang baru saja Hexxa Colong!"
                             f"\n[TEKAN DISINI](t.me/addstickers/{packname}) Untuk Melihat Sticker Colongan Anda",
                             parse_mode="md",
                         )
@@ -195,7 +195,7 @@ async def kang(args):
                 rsp = await conv.get_response()
                 if "Sorry, the file type is invalid." in rsp.text:
                     return await args.edit(
-                        "`Maaf King, Saya Gagal Menambahkan Sticker, Gunakan` @Stickers ` Bot Untuk Menambahkan Sticker Colongan Anda.`"
+                        "`Maaf Hexxa, Saya Gagal Menambahkan Sticker, Gunakan` @Stickers ` Bot Untuk Menambahkan Sticker Colongan Anda.`"
                     )
                 await conv.send_message(emoji)
                 # Ensure user doesn't get spamming notifications
@@ -225,7 +225,7 @@ async def kang(args):
                 rsp = await conv.get_response()
                 if "Sorry, the file type is invalid." in rsp.text:
                     return await args.edit(
-                        "`Mohon Maaf King, Saya Gagal Menambahkan Sticker, Gunakan` @Stickers ` Bot Untuk Menambahkan Sticker Colongan Anda.`"
+                        "`Mohon Maaf Hexxa, Saya Gagal Menambahkan Sticker, Gunakan` @Stickers ` Bot Untuk Menambahkan Sticker Colongan Anda.`"
                     )
                 await conv.send_message(emoji)
                 # Ensure user doesn't get spamming notifications
@@ -284,7 +284,7 @@ async def resize_photo(photo):
 async def get_pack_info(event):
     if not event.is_reply:
         return await event.edit(
-            "`Mohon Balas Ke Sticker King`"
+            "`Mohon Balas Ke Sticker Hexxa`"
         )
 
     rep_msg = await event.get_reply_message()
@@ -339,7 +339,7 @@ async def sticker_to_png(sticker):
     try:
         img.document.attributes[1]
     except Exception:
-        await sticker.edit("`Maaf King, Ini Bukanlah Sticker`")
+        await sticker.edit("`Maaf Hexxa, Ini Bukanlah Sticker`")
         return
 
     with io.BytesIO() as image:
@@ -354,7 +354,7 @@ async def sticker_to_png(sticker):
             await sticker.delete()
     return
 
-# KING - USERBOT
+# Hexxa - USERBOT
 
 CMD_HELP.update(
     {

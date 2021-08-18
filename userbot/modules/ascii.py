@@ -1,5 +1,5 @@
 # based on https://gist.github.com/wshanshan/c825efca4501a491447056849dd207d6
-# Ported by Apis (King-Userbot)
+# Ported by Apis (Hexxa-Userbot)
 
 import os
 import random
@@ -128,7 +128,7 @@ async def random_color():
 async def _(event):
     BG = event.pattern_match.group(1)
     if BG.isnumeric():
-        return await event.edit("`Mohon Masukkan Warna Bukan Angka King`")
+        return await event.edit("`Mohon Masukkan Warna Bukan Angka Hexxa`")
     elif BG:
         global bground
         bground = BG

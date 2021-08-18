@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# KING USERBOT
+# Hexxa USERBOT
 from asyncio import sleep
 
 from requests import get
@@ -195,7 +195,7 @@ async def ANTI_SPAMBOTS(welcm):
     except ValueError:
         pass
 
-# Ported by Apis (King-Userbot)
+# Ported by Apis (Hexxa-Userbot)
 
 CMD_HELP.update(
     {

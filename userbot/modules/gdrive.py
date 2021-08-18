@@ -138,7 +138,7 @@ async def generate_credentials(gdrive):
             await gdrive.edit(
                 "`[AUTENTIKASi - ERROR]`\n\n"
                 "`Status` : **BAD**\n"
-                "`Alasan` : King, tolong ambil **G_DRIVE_DATA** "
+                "`Alasan` : Hexxa, tolong ambil **G_DRIVE_DATA** "
                 "[Disini](https://telegra.ph/How-To-Setup-Google-Drive-04-03)"
             )
             return False
@@ -618,7 +618,7 @@ async def upload(gdrive, service, file_path, file_name, mimeType):
         pass
     body = {
         "name": file_name,
-        "description": "Mengunggah Dari Telegram Menggunakan King Userbot.",
+        "description": "Mengunggah Dari Telegram Menggunakan Hexxa Userbot.",
         "mimeType": mimeType,
     }
     try:

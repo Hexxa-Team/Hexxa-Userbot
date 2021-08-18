@@ -1,5 +1,5 @@
 # Tiny stickers
-# Ported by Apis (King-Userbot)
+# Ported by Apis (Hexxa-Userbot)
 
 
 # Apis Ganteng

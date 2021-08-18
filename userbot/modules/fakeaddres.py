@@ -8,7 +8,7 @@ from userbot import CMD_HELP
 
 # Port By @VckyouuBitch From GeezProject
 # Buat Kamu Yang Hapus Credits. Intinya Kamu Anjing:)
-# Recode Lynx-Userbot dari King-Userbot
+# Recode Lynx-Userbot dari Hexxa-Userbot
 # Dari Apis Terimakasih Vicky
 
 @register(outgoing=True, pattern="^.ip(?: |$)(.*)")

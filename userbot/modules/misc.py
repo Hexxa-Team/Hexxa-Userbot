@@ -5,7 +5,7 @@
 #
 # You can find misc modules, which dont fit in anything xD
 #
-# Repository (King-Userbot)
+# Repository (Hexxa-Userbot)
 """ Userbot module for other small commands. """
 
 from random import randint
@@ -67,7 +67,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan King-Userbot....`")
+    await event.edit("`Mematikan Hexxa-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -83,7 +83,7 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`King-Userbot Telah Di Mulai Ulang`")
+                                        "`Hexxa-Userbot Telah Di Mulai Ulang`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)

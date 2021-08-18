@@ -60,7 +60,7 @@ async def add_new_filter(new_handler):
         if BOTLOG_CHATID:
             await new_handler.client.send_message(
                 BOTLOG_CHATID, f"#FILTER\nID OBROLAN: {new_handler.chat_id}\nTRIGGER: {keyword}"
-                "\n\n`Pesan Berikut Disimpan Sebagai Data Balasan Filter Untuk Obrolan, Mohon Jangan Menghapusnya King`"
+                "\n\n`Pesan Berikut Disimpan Sebagai Data Balasan Filter Untuk Obrolan, Mohon Jangan Menghapusnya Hexxa`"
             )
             msg_o = await new_handler.client.forward_messages(
                 entity=BOTLOG_CHATID,
@@ -133,20 +133,20 @@ async def filters_active(event):
     filters = get_filters(event.chat_id)
     for filt in filters:
         if transact == "`Tidak Ada Filter Apapun Disini.`":
-            transact = "**Daftar Filter King Yang Aktif Disini :**\n"
+            transact = "**Daftar Filter Hexxa Yang Aktif Disini :**\n"
             transact += " ⎆ `{}`\n".format(filt.keyword)
         else:
             transact += " ⎆ `{}`\n".format(filt.keyword)
 
     await event.edit(transact)
 
-# KING USERBOT
+# Hexxa USERBOT
 
 CMD_HELP.update(
     {
         "filter": "**✘ Plugin : **`filter`\
         \n\n  •  **Perintah :** `.filters`\
-        \n  •  **Function : **Melihat filter king yang aktif di obrolan.\
+        \n  •  **Function : **Melihat filter Hexxa yang aktif di obrolan.\
         \n\n  •  **Perintah :** `.filter` <keyword> <balasan> atau balas ke pesan ketik `.filter` <keyword>\
         \n  •  **Function : **Membuat filter di obrolan, Bot Akan Membalas Jika Ada Yang Menyebut 'keyword' yang dibuat. Bisa dipakai ke media/sticker/vn/file.\
         \n\n  •  **Perintah :** `.stop` <keyword>\

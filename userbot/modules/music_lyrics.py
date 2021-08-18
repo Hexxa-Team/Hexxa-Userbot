@@ -2,7 +2,7 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
-# Ported to King-Userbot by @KENZO-404
+# Ported to Hexxa-Userbot by @KENZO-404
 # Credits : @Ultroid
 
 import json
@@ -146,17 +146,17 @@ Connected to server...
 @register(outgoing=True, pattern=r"^\.lirik (.*)")
 async def original(event):
     if not event.pattern_match.group(1):
-        return await event.edit("King , Beri Saya Sebuah Judul Lagu Untuk Mencari Lirik.\n**Contoh** : `.lyrics` <Judul Lagu>")
+        return await event.edit("Hexxa , Beri Saya Sebuah Judul Lagu Untuk Mencari Lirik.\n**Contoh** : `.lyrics` <Judul Lagu>")
     kenzo = event.pattern_match.group(1)
     event = await event.edit("`🔍 Sedang Mencari Lirik Lagu...`")
     dc = random.randrange(1, 3)
     if dc == 1:
-        kInG = a1
+        Hexxa = a1
     elif dc == 2:
-        kInG = a2
+        Hexxa = a2
     elif dc == 3:
-        kInG = a3
-    extract_lyrics = sl(f"{kInG}", "15b9fb6193efd5d90")
+        Hexxa = a3
+    extract_lyrics = sl(f"{Hexxa}", "15b9fb6193efd5d90")
     k3nz = extract_lyrics.get_lyrics(f"{kenzo}")
     ap1s = k3nz["lyrics"]
     await event.client.send_message(event.chat_id, ap1s, reply_to=event.reply_to_msg_id)
