@@ -155,7 +155,7 @@
       "required": false
     },
     "UMUR": {
-      "description": "Isi Umur Anda Sekarang (19 Tahun Adalah Umur Developer King Saat Ini)",
+      "description": "Isi Umur Anda Sekarang",
       "value": "19 Tahun",
       "required": false
     },

@@ -80,11 +80,11 @@ async def git_commit(file_name, mone):
                 file_name,
                 "Uploaded New Plugin",
                 commit_data,
-                branch="King-Userbot")
+                branch="Hexxa-Userbot")
             print("Committed File")
             ccess = GIT_REPO_NAME
             ccess = ccess.strip()
-            await mone.edit(f"`Commited On Your Github Repo`\n\n[Your Plugins](https://github.com/{ccess}/tree/King-Userbot/userbot/modules/)")
+            await mone.edit(f"`Commited On Your Github Repo`\n\n[Your Plugins](https://github.com/{ccess}/tree/Hexxa-Userbot/userbot/modules/)")
         except BaseException:
             print("Cannot Create Plugin")
             await mone.edit("Cannot Upload Plugin")

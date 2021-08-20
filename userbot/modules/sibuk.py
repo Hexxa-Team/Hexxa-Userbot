@@ -1,4 +1,4 @@
-# Ported by @PacarFerdilla - (King-Userbot)
+# Ported by @PacarFerdilla - (Hexxa-Userbot)
 
 from datetime import datetime
 import time
@@ -71,7 +71,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name="⚡𝗦𝗜𝗕𝗨𝗞⚡"))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#SIBUK\n**King Telah SIBUK!**")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#SIBUK\n**Hexxa Telah SIBUK!**")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -267,7 +267,7 @@ CMD_HELP.update(
     {
         "sibuk": "**✘ Plugin : **`sibuk`\
         \n\n  •  **Perintah :** `.sibuk`\
-        \n  •  **Function : **Memberi tahu kalau King sedang SIBUK , dan menguubah nama belakang menjadi ⚡️𝗦𝗜𝗕𝗨𝗞⚡️\
+        \n  •  **Function : **Memberi tahu kalau Hexxa sedang SIBUK , dan menguubah nama belakang menjadi ⚡️𝗦𝗜𝗕𝗨𝗞⚡️\
         \n\n  •  **Notes :** __Bila ada orang spam berlebihan ke Anda , tinggal ketik__ `.block`\
     "
     }

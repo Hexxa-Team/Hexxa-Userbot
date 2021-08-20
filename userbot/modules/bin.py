@@ -22,7 +22,7 @@ async def _(event):
     await event.edit(f"```Generated CC {query}..```")
     async with bot.conversation("@Carol5_bot") as conv:
         try:
-            king = await conv.send_message(f"/gen {query}")
+            Hexxa = await conv.send_message(f"/gen {query}")
             await asyncio.sleep(8)
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
@@ -32,7 +32,7 @@ async def _(event):
             return await event.edit(f"Gagal generate {query}!")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 @register(outgoing=True, pattern=r"^\.chk(?: |$)(.*)")
@@ -45,7 +45,7 @@ async def _(event):
     await event.edit("```Checking CC Number..```")
     async with bot.conversation("@Carol5_bot") as conv:
         try:
-            king = await conv.send_message(f"/ss {query}")
+            Hexxa = await conv.send_message(f"/ss {query}")
             await asyncio.sleep(10)
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
@@ -55,7 +55,7 @@ async def _(event):
             return await event.edit(f"Gagal Mengecek {query}!")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 @register(outgoing=True, pattern=r"^\.bin(?: |$)(.*)")
@@ -68,7 +68,7 @@ async def _(event):
     await event.edit(f"```Checking BIN {query}```")
     async with bot.conversation("@Carol5_bot") as conv:
         try:
-            king = await conv.send_message(f"/bin {query}")
+            Hexxa = await conv.send_message(f"/bin {query}")
             await asyncio.sleep(10)
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
@@ -78,7 +78,7 @@ async def _(event):
             return await event.edit(f"Bin {query} Invalid!")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 @register(outgoing=True, pattern=r"^\.skey(?: |$)(.*)")
@@ -91,7 +91,7 @@ async def _(event):
     await event.edit(f"```Checking SK KEY {query}```")
     async with bot.conversation("@Carol5_bot") as conv:
         try:
-            king = await conv.send_message(f"/bin {query}")
+            Hexxa = await conv.send_message(f"/bin {query}")
             await asyncio.sleep(10)
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
@@ -101,7 +101,7 @@ async def _(event):
             return await event.edit("SK KEY Invalid!")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 @register(outgoing=True, pattern=r"^\.nmap(?: |$)(.*)")
@@ -114,14 +114,14 @@ async def _(event):
     await event.edit(f"```Getting info {query}..```")
     async with bot.conversation("@scriptkiddies_bot") as conv:
         try:
-            king = await conv.send_message(f"/nmap {query}")
+            Hexxa = await conv.send_message(f"/nmap {query}")
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             return await event.reply("Unblock @scriptkiddies_bot atau chat dulu")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 @register(outgoing=True, pattern=r"^\.subd(?: |$)(.*)")
@@ -134,14 +134,14 @@ async def _(event):
     await event.edit(f"```Generated subdomain {query}..```")
     async with bot.conversation("@scriptkiddies_bot") as conv:
         try:
-            king = await conv.send_message(f"/subdomain {query}")
+            Hexxa = await conv.send_message(f"/subdomain {query}")
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             return await event.reply("Unblock @scriptkiddies_bot atau chat dulu")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 @register(outgoing=True, pattern=r"^\.cekhttp(?: |$)(.*)")
@@ -154,14 +154,14 @@ async def _(event):
     await event.edit(f"```Checking Respond {query}..```")
     async with bot.conversation("@scriptkiddies_bot") as conv:
         try:
-            king = await conv.send_message(f"/httpheader {query}")
+            Hexxa = await conv.send_message(f"/httpheader {query}")
             pro = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             return await event.reply("Unblock @scriptkiddies_bot atau chat dulu")
         else:
             await event.edit(pro.message)
-            await event.client.delete_messages(conv.chat_id, [king.id, pro.id])
+            await event.client.delete_messages(conv.chat_id, [Hexxa.id, pro.id])
 
 
 CMD_HELP.update(

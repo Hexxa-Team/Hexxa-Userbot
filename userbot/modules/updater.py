@@ -119,7 +119,7 @@ async def update(event, repo, ups_rem, ac_br):
     await asyncio.sleep(1)
     await event.edit('`Di Mulai Ulang....`')
     await asyncio.sleep(1)
-    await event.edit('`Mohon Menunggu Beberapa Detik King`')
+    await event.edit('`Mohon Menunggu Beberapa Detik Hexxa`')
     await asyncio.sleep(10)
     await event.delete()
 
@@ -144,7 +144,7 @@ async def upstream(event):
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Maaf King Pembaruan Tidak Dapat Di Lanjutkan Karna "
+        txt = "`Maaf Hexxa Pembaruan Tidak Dapat Di Lanjutkan Karna "
         txt += "Beberapa Masalah Terjadi`\n\n**LOGTRACE :**\n"
         repo = Repo()
     except NoSuchPathError as error:

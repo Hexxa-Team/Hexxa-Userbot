@@ -32,7 +32,7 @@ async def remoteaccess(event):
         await event.client.send_message(chat_id, msg)
         await event.edit("`Sukses Mengirim Pesan Anda!`")
     except BaseException:
-        await event.edit("**Terjadi Error , Gagal Mengirim Pesan King !.**")
+        await event.edit("**Terjadi Error , Gagal Mengirim Pesan Hexxa !.**")
 
 CMD_HELP.update(
     {

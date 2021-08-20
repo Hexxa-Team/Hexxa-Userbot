@@ -5,7 +5,7 @@
 # inline credit @keselekpermen69
 #
 # Ported by Apis @PacarFerdilla
-# Repository (King - Userbot)
+# Repository (Hexxa - Userbot)
 """ Userbot initialization. """
 
 
@@ -196,7 +196,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "King-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Hexxa-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "0._1.0")
@@ -363,7 +363,7 @@ USERS = {}
 COUNT_PM = {}
 ENABLE_KILLME = True
 LASTMSG = {}
-king = bot
+Hexxa = bot
 CMD_HELP = {}
 ISAFK = False
 AFKREASON = None
@@ -414,11 +414,11 @@ def paginate_help(page_number, loaded_modules, prefix):
 
 
 # -----------------------------------------------File------------------------------------>
-king = bot
+Hexxa = bot
 
-with king:
+with Hexxa:
     try:
-        king.tgbot = tgbot = TelegramClient(
+        Hexxa.tgbot = tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=API_KEY,
             api_hash=API_HASH).start(
@@ -436,7 +436,7 @@ with king:
 
 # ------------------------------ChatAction--------------->
 
-        @king.tgbot.on(events.ChatAction)
+        @Hexxa.tgbot.on(events.ChatAction)
         async def handler(event):
             if event.user_joined or event.user_added:
                 u = await event.client.get_entity(event.chat_id)
@@ -455,7 +455,7 @@ with king:
 
 # ====================================InlineHandler===================================== #
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/start"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/start"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -471,7 +471,7 @@ with king:
                     f"**Bahasa :** Python \n"
                     f"**Daftar Perintah Bot :** [KLIK DISINI](https://telegra.ph/Perintah-Penggunaan-08-05) \n"
                     "========================================")
-                await king.tgbot.send_file(event.chat_id, file=logo,
+                await Hexxa.tgbot.send_file(event.chat_id, file=logo,
                                            caption=text,
                                            buttons=[
                                                [
@@ -480,7 +480,7 @@ with king:
                                                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                                                [custom.Button.url(
                                                    text="Support Chat",
-                                                   url="https://t.me/KingUserbotSupport"),
+                                                   url="https://t.me/HexxaUserbotGroup"),
                                                    custom.Button.url(
                                                        text="Support Channel",
                                                        url="https://t.me/TeamHexxaUserbot"
@@ -489,7 +489,7 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/repo"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/repo"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -507,18 +507,18 @@ with king:
                     ]
                 )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/ping"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/ping"))
         async def handler(event):
             if event.message.from_id != uid:
                 start = datetime.now()
                 end = datetime.now()
                 ms = (end - start).microseconds / 1000
-                await king.tgbot.send_message(
+                await Hexxa.tgbot.send_message(
                     event.chat_id,
                     f"**PONG !!**\n `{ms}ms`",
                 )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/alive"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/alive"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -539,7 +539,7 @@ with king:
                     "=============================\n"
                     f"    **USERBOT TELEGRAM** \n"
                     "=============================")
-                await king.tgbot.send_file(event.chat_id, file=logo,
+                await Hexxa.tgbot.send_file(event.chat_id, file=logo,
                                            caption=text,
                                            buttons=[
                                                [
@@ -554,7 +554,7 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/donasi"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/donasi"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -564,7 +564,7 @@ with king:
                     f"Ingin donasi atau menyumbang uang ini ke developer kami\n\n"
                     f"• **Notes : Donasi Seikhlasnya** \n\n"
                     f"**Terimakasih** ")
-                await king.tgbot.send_file(event.chat_id, file=donate,
+                await Hexxa.tgbot.send_file(event.chat_id, file=donate,
                                            caption=text,
                                            buttons=[
                                                [
@@ -576,7 +576,7 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/string"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/string"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -586,7 +586,7 @@ with king:
                     f"Ingin Mengambil String Session Ini Di Bot\n\n"
                     f"Tanpa Harus Anda Bergabung Ke Grup Support Kami\n\n"
                     f"⚠️ **Gunakan String Session Dengan Bijak**")
-                await king.tgbot.send_file(event.chat_id, file=string,
+                await Hexxa.tgbot.send_file(event.chat_id, file=string,
                                            caption=text,
                                            buttons=[
                                                [
@@ -598,13 +598,13 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/profile"))
+        @Hexxa.tgbot.on(events.NewMessage(pattern=r"/profile"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(f"**Profile Chat**\n\n**Nama Chat :** [{get_display_name(u)}](tg://user?id={u.id})\n**ID Chat :** {u.id}")
 
-        @king.tgbot.on(events.InlineQuery)  # pylint:disable=E0602
+        @Hexxa.tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
@@ -629,7 +629,7 @@ with king:
             else:
                 result = builder.article(
                     "USERBOT TELEGRAM",
-                    text=""" 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n=============================\n**King-Userbot** Adalah Sebuah Repository Userbot Yang Dapat Membantu Akun Pengguna Telegram Melakukan Hal Apapun\n\n⚠️ DISCLAIMER ⚠️\nBacalah Peraturan Berikut [Disini](https://telegra.ph/Peraturan-08-04)\n\n**Gabung Grup Support Kami** [Disini](https://t.me/KingUserbotSupport)\n\n=============================\n\n**USERBOT TELEGRAM**""",
+                    text=""" 𝙃𝙚𝙭𝙭𝙖-𝙐𝙎𝙀𝙍𝘽𝙊𝙏🔥\n\n=============================\n**Hexxa-Userbot** Adalah Sebuah Repository Userbot Yang Dapat Membantu Akun Pengguna Telegram Melakukan Hal Apapun\n\n⚠️ DISCLAIMER ⚠️\nBacalah Peraturan Berikut [Disini](https://telegra.ph/Peraturan-08-04)\n\n**Gabung Grup Support Kami** [Disini](https://t.me/KingUserbotSupport)\n\n=============================\n\n**USERBOT TELEGRAM**""",
                     buttons=[
                         [
                             custom.Button.url(
@@ -648,7 +648,7 @@ with king:
 
 # =============================================Button========================================= #
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"opener")
             )
@@ -667,14 +667,14 @@ with king:
                 reply_pop_up_alert = f"🔒 Code Tersembunyi 🔒\n\nUserbot Milik {ALIVE_NAME} Yang Hanya Bisa Melihat Code Tersembunyi"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"settings")
             )
         )
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
-                text = f"\n**🛠 Pengaturan Inline Userbot 🛠**\n\n**King** {DEFAULTUSER}"
+                text = f"\n**🛠 Pengaturan Inline Userbot 🛠**\n\n**Hexxa** {DEFAULTUSER}"
                 await event.edit(
                     text,
                     file=logo,
@@ -699,7 +699,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"alive_inline")
             )
@@ -738,7 +738,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"database_inline")
             )
@@ -764,7 +764,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_next\((.+?)\)")
             )
@@ -781,7 +781,7 @@ with king:
                 reply_pop_up_alert = f"🔒 Code Tersembunyi 🔒\n\nUserbot Milik {ALIVE_NAME} Yang Hanya Bisa Melihat Code Tersembunyi"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_close\((.+?)\)")
             )
@@ -803,7 +803,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_prev\((.+?)\)")
             )
@@ -821,7 +821,7 @@ with king:
                 reply_pop_up_alert = f"🔒 Code Tersembunyi 🔒\n\nUserbot Milik {ALIVE_NAME} Yang Hanya Bisa Melihat Code Tersembunyi"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"menu_inline")
             )
@@ -846,7 +846,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(events.CallbackQuery(data=b"close"))
+        @Hexxa.tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
             if event.query.user_id == uid:
                 text = f"\n**Menu Ditutup!**"
@@ -863,7 +863,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @Hexxa.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(b"ub_modul_(.*)")
             )

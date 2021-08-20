@@ -5,7 +5,7 @@ from userbot.events import register
 from userbot import CMD_HELP
 
 
-# Ported Apis Ganteng ( King - Userbot )
+# Ported Apis Ganteng ( Hexxa - Userbot )
 @register(outgoing=True, pattern="^.xban(?: |$)(.*)")
 async def allban(event):
     nikal = await event.get_chat()

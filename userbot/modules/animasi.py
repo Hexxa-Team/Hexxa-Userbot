@@ -1,4 +1,4 @@
-# Ported by Apis (King-Userbot)
+# Ported by Apis (Hexxa-Userbot)
 # animasi file
 
 from time import sleep

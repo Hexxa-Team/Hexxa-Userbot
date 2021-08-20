@@ -1,4 +1,4 @@
-# Copyright (C) 2021 King-Userbot (Apis) USERBOT TELEGRAM
+# Copyright (C) 2021 Hexxa-Userbot (Apis) USERBOT TELEGRAM
 # Ported by Apis
 # Thanks for ultroid
 # Thanks for ᴀxᴇʟ.ᴀʟ/ᴄᴏɴᴛʀɪʙᴜᴛᴏʀ
@@ -11,7 +11,7 @@ from userbot import CMD_HELP, bot
 async def gcast(event):
     kinguser = event.pattern_match.group(1)
     if not kinguser:
-        return await event.edit("`King, Mohon Berikan Sebuah Pesan`")
+        return await event.edit("`Hexxa, Mohon Berikan Sebuah Pesan`")
     tt = event.text
     msg = tt[6:]
     kingget = await event.edit("`Sedang Mengirim Pesan Secara Global...⚡️`")
@@ -53,7 +53,7 @@ CMD_HELP.update(
     {
         "gcast": "**✘ Plugin :** `Global Broadcast`\
         \n\n  •  **Perintah :** `.gcast` <Text>\
-        \n  •  **Function : **Global Group Broadcast , Mengirim Pesan Global Broadcast pesan ke Seluruh Grup Yang King Masuki\
+        \n  •  **Function : **Global Group Broadcast , Mengirim Pesan Global Broadcast pesan ke Seluruh Grup Yang Hexxa Masuki\
         \n\n  •  **Perintah :** `.pcast` <Text>\
         \n  •  **Function : **Global Pengguna Broadcast , Kirim Pesan itu Secara Global ke Semua Pengguna Atau Anggota Grup Anda\
     "

@@ -1,5 +1,5 @@
 # Based Plugins
-# Ported For King-Userbot By PacarFerdilla/Apis
+# Ported For Hexxa-Userbot By PacarFerdilla/Apis
 # If You Kang It Don't Delete / Warning!! Jangan Hapus Ini Anjenggg!!!
 # Done!
 from userbot import CMD_HELP, bot
@@ -48,7 +48,7 @@ async def _(event):
     await tap[0].click(event.chat_id)
     await event.delete()
 
-# Ported For King-Userbot By Apis
+# Ported For Hexxa-Userbot By Apis
 
 CMD_HELP.update(
     {

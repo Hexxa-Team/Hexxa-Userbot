@@ -59,7 +59,7 @@ CMD_HELP.update(
         \n  •  **Function :** Menjawab salam panjang\
         \n\n  •  **Perintah :** `.L` | `.l`\
         \n  •  **Function :** Untuk menjawab salam\
-        \n\n\n  •  **Pesan untuk salam dan menjawab salam ke semua orang , dimanapun king berada.**\n➠ **Pesan dari developer king Apis , enjoy userbot:D**\
+        \n\n\n  •  **Pesan untuk salam dan menjawab salam ke semua orang , dimanapun Hexxa berada.**\n➠ **Pesan dari developer Hexxa Apis , enjoy userbot:D**\
     "
     }
 )

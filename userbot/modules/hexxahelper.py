@@ -24,7 +24,7 @@ async def var(m):
     await m.edit(
         f"      ╔════════════╗\n  **__🔥DAFTAR VARS🔥__**     \n╚════════════╝ \n"
         f"**Disini Daftar Vars Dari Hexxa-Userbot** {DEFAULTUSER} :\n"
-        "═⎆ Daftar Vars : [DAFTAR VARS](https://raw.githubusercontent.com/apisuserbot/King-Userbot/King-Userbot/varshelper.txt)")
+        "═⎆ Daftar Vars : [DAFTAR VARS](https://raw.githubusercontent.com/apisuserbot/Hexxa-Userbot/Hexxa-Userbot/varshelper.txt)")
 
 
 CMD_HELP.update(

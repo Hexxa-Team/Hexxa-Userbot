@@ -1,4 +1,4 @@
-# (C) Copyright 2021 King-Userbot LLC Company
+# (C) Copyright 2021 Hexxa-Userbot LLC Company
 # GPL-3.0 License From Github
 # Credits by @TeamUltroid, Kraken, Sawan.
 

@@ -1,4 +1,4 @@
-# Copyright (C) 2021 King - Userbot
+# Copyright (C) 2021 Hexxa - Userbot
 # Created by kyy
 # Jangan hapus credit asu!!!
 

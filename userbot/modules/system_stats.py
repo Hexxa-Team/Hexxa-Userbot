@@ -329,7 +329,7 @@ async def redis(alive):
         f"╭╼════════════════════╾╮ \n"
         f"│  ⇱ **SISTEM ALIVE BOT** ⇲ \n"
         f"┟╼════════════════════╾┤ \n"
-        f"╟◈ 🤴 `King     :`{DEFAULTUSER} \n"
+        f"╟◈ 🤴 `Hexxa     :`{DEFAULTUSER} \n"
         f"╟◈ 🔎 `Username :`@{user.username} \n"
         f"╟◈ ⚙️ `Telethon :`v. {version.__version__} \n"
         f"╟◈ 🐍 `Python   :`v. {python_version()} \n"
@@ -373,7 +373,7 @@ async def redis(alive):
     output = (
         f"★ [Hexxa-Userbot](https://github.com/Hexxa-Team/Hexxa-Userbot) **Running Userbot Active!** ★\n\n"
         f"__**{HEXXA_TEKS_KUSTOM}**__\n\n"
-        f"{ALIVE_EMOJI} **King :** `{DEFAULTUSER}` \n"
+        f"{ALIVE_EMOJI} **Hexxa :** `{DEFAULTUSER}` \n"
         f"{ALIVE_EMOJI} **Plugins :** `{len(modules)} Plugin` \n"
         f"{ALIVE_EMOJI} **Bot Version :** `{BOT_VER}` \n"
         f"{ALIVE_EMOJI} **Python Version :** `{python_version()}` \n"

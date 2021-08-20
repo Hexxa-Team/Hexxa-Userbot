@@ -6,7 +6,7 @@
 # (c) Spechide - UniBorg
 # Port From UniBorg to UserBot by @afdulfauzan
 
-# KING - USERBOT
+# Hexxa - USERBOT
 
 from telethon.tl import functions
 from userbot.events import register
@@ -33,7 +33,7 @@ async def telegraphs(grop):
                 result = await grop.client(functions.messages.ExportChatInviteRequest(
                     peer=created_chat_id,
                 ))
-                await grop.edit("King, Grup/Channel {} Sukses Dibuat. Tekan [{}]({}) Untuk Melihatnya".format(group_name, group_name, result.link))
+                await grop.edit("Hexxa, Grup/Channel {} Sukses Dibuat. Tekan [{}]({}) Untuk Melihatnya".format(group_name, group_name, result.link))
             except Exception as e:  # pylint:disable=C0103,W0703
                 await grop.edit(str(e))
         elif type_of_group == "g" or type_of_group == "c":

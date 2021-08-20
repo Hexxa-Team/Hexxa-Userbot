@@ -76,7 +76,7 @@ async def create_token_file(token_file, event):
         await conv.send_message(
             "Pergi Ke "
             "Linknya Dan Ikuti "
-            f"Browser Anda King : {authorize_url} Dan "
+            f"Browser Anda Hexxa : {authorize_url} Dan "
             "Balas Kode"
         )
         response = await conv.wait_event(
@@ -129,14 +129,14 @@ async def upload_google_photos(event):
 
     if not event.reply_to_msg_id and not input_str:
         await event.edit(
-            "(C) <b>King-Userbot</b>\nTidak Ada Yang Akan Membantu Anda", parse_mode="html"
+            "(C) <b>Hexxa-Userbot</b>\nTidak Ada Yang Akan Membantu Anda", parse_mode="html"
         )
         return
 
     token_file = TOKEN_FILE_NAME
     is_cred_exists, creds = await check_creds(token_file, event)
     if not is_cred_exists:
-        await event.edit("Pertama Jalankan <code>.gpsetup</code> Dulu King", parse_mode="html")
+        await event.edit("Pertama Jalankan <code>.gpsetup</code> Dulu Hexxa", parse_mode="html")
 
     service = build("photoslibrary", "v1", http=creds.authorize(Http()))
 
@@ -174,11 +174,11 @@ async def upload_google_photos(event):
     async with aiohttp.ClientSession() as session:
         headers = {
             "Content-Length": "0",
-            "King-Goog-Upload-Command": "start",
-            "King-Goog-Upload-Content-Type": mime_type,
-            "King-Goog-Upload-File-Name": file_name,
-            "King-Goog-Upload-Protocol": "resumable",
-            "King-Goog-Upload-Raw-Size": str(file_size),
+            "Hexxa-Goog-Upload-Command": "start",
+            "Hexxa-Goog-Upload-Content-Type": mime_type,
+            "Hexxa-Goog-Upload-File-Name": file_name,
+            "Hexxa-Goog-Upload-Protocol": "resumable",
+            "Hexxa-Goog-Upload-Raw-Size": str(file_size),
             "Authorization": "Bearer " + creds.access_token,
         }
         # Step 1: Initiating an upload session
@@ -194,10 +194,10 @@ async def upload_google_photos(event):
         logger.info(step_one_resp_headers)
         # Step 2: Saving the session URL
 
-        real_upload_url = step_one_resp_headers.get("King-Goog-Upload-URL")
+        real_upload_url = step_one_resp_headers.get("Hexxa-Goog-Upload-URL")
         logger.info(real_upload_url)
         upload_granularity = int(
-            step_one_resp_headers.get("King-Goog-Upload-Chunk-Granularity")
+            step_one_resp_headers.get("Hexxa-Goog-Upload-Chunk-Granularity")
         )
         logger.info(upload_granularity)
         number_of_req_s = int((file_size / upload_granularity))
@@ -212,8 +212,8 @@ async def upload_google_photos(event):
 
                 headers = {
                     "Content-Length": str(part_size),
-                    "King-Goog-Upload-Command": "upload",
-                    "King-Goog-Upload-Offset": str(offset),
+                    "Hexxa-Goog-Upload-Command": "upload",
+                    "Hexxa-Goog-Upload-Offset": str(offset),
                     "Authorization": "Bearer " + creds.access_token,
                 }
                 logger.info(i)
@@ -239,8 +239,8 @@ async def upload_google_photos(event):
             logger.info(number_of_req_s)
             headers = {
                 "Content-Length": str(len(current_chunk)),
-                "King-Goog-Upload-Command": "upload, finalize",
-                "King-Goog-Upload-Offset": str(number_of_req_s * upload_granularity),
+                "Hexxa-Goog-Upload-Command": "upload, finalize",
+                "Hexxa-Goog-Upload-Offset": str(number_of_req_s * upload_granularity),
                 "Authorization": "Bearer " + creds.access_token,
             }
             logger.info(headers)

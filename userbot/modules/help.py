@@ -12,7 +12,7 @@ from platform import uname
 
 plugins = CMD_HELP
 
-# Ported by apisuserbot (King-Userbot)
+# Ported by apisuserbot (Hexxa-Userbot)
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================

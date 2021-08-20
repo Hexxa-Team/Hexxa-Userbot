@@ -57,7 +57,7 @@ async def sticklet(event):
             B))
 
     image_stream = io.BytesIO()
-    image_stream.name = "@king.webp"
+    image_stream.name = "@Hexxa.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 

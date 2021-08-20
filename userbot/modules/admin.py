@@ -36,14 +36,14 @@ from userbot.events import register
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`Gambar Terlalu Kecil`"
 PP_ERROR = "`Gagal Memproses Gambar`"
-NO_ADMIN = "`King Gagal Dikarenakan Bukan Admin :)`"
+NO_ADMIN = "`Hexxa Gagal Dikarenakan Bukan Admin :)`"
 NO_PERM = "`Tidak Mempunyai Izin!`"
 NO_SQL = "`Berjalan Pada Mode Non-SQL`"
 
 CHAT_PP_CHANGED = "`Sukses Mengubah Profil Grup`"
 CHAT_PP_ERROR = (
     "`Ada Masalah Dengan Memperbarui Foto,`"
-    "`Mungkin Karna King Bukan Admin,`"
+    "`Mungkin Karna Hexxa Bukan Admin,`"
     "`Atau Tidak Mempunyai Izin.`"
 )
 INVALID_MEDIA = "`Media Tidak Valid`"

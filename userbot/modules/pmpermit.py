@@ -279,7 +279,7 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat King!`"
+        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat Hexxa!`"
     )
 
     if BOTLOG:
@@ -343,7 +343,7 @@ async def unblockpm(unblock):
 async def add_pmsg(cust_msg):
     """Set your own Unapproved message"""
     if not PM_AUTO_BAN:
-        return await cust_msg.edit("**King Anda Harus Menyetel** `PM_AUTO_BAN` **Ke** `True`")
+        return await cust_msg.edit("**Hexxa Anda Harus Menyetel** `PM_AUTO_BAN` **Ke** `True`")
     try:
         import userbot.modules.sql_helper.globals as sql
     except AttributeError:
@@ -399,7 +399,7 @@ async def add_pmsg(cust_msg):
             )
 
 # Ported by Apis/@PacarFerdilla
-# King Userbot
+# Hexxa Userbot
 
 
 @register(incoming=True,
@@ -413,9 +413,9 @@ async def permitpm(event):
     if event.is_private:
         if not pm_permit_sql.is_approved(chats.id):
             pm_permit_sql.approve(
-                chats.id, "`Developer King Apis Telah Mengirimi Anda Pesan :)`")
+                chats.id, "`Developer Hexxa Apis Telah Mengirimi Anda Pesan :)`")
             await borg.send_message(
-                chats, "**Menerima Pesan!, Pengguna Terdeteksi Adalah Developer King Apis**"
+                chats, "**Menerima Pesan!, Pengguna Terdeteksi Adalah Developer Hexxa Apis**"
             )
 
 
