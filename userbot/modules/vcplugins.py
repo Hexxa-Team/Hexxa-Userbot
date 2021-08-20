@@ -4,7 +4,6 @@ from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
 from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 from telethon.tl.functions.phone import JoinGroupCallRequest as joinvc
-from telethon.tl.functions.phone import LeaveGroupCallRequest as leavevc
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
 
@@ -17,7 +16,7 @@ async def get_call(event):
 
 def user_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i : i + n]
+        yield l[i: i + n]
 
 
 @register(outgoing=True, groups_only=True, pattern=r"^\.startvc$")
